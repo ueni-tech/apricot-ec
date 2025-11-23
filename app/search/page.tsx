@@ -1,6 +1,6 @@
-import Breadcrumbs from '../components/Breadcrumbs/Breadcrumbs'
-import SearchContent from '../components/SearchContent/SearchContent'
-import SideMenu from '../components/SideMenu/SideMenu'
+import Breadcrumbs from '@/components/Breadcrumbs/Breadcrumbs'
+import SearchContent from '@/components/SearchContent/SearchContent'
+import SideMenu from '@/components/SideMenu/SideMenu'
 import styles from './page.module.scss'
 
 export const metadata = {

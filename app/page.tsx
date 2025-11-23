@@ -1,6 +1,6 @@
-import MainVisual from '@/app/components/MainVisual/MainVisual'
-import Info from './components/Info/Info'
-import ContentBlock from './components/ContentBlock/ContentBlock'
+import MainVisual from '@/components/MainVisual/MainVisual'
+import Info from '@/components/Info/Info'
+import ContentBlock from '@/components/ContentBlock/ContentBlock'
 import styles from './page.module.scss'
 
 export default function Home() {

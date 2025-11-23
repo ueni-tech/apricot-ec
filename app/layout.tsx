@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { Noto_Sans_JP, Roboto, Damion } from 'next/font/google'
-import Header from '@/app/components/Header/Header'
-import Footer from '@/app/components/Footer/Footer'
+import Header from '@/components/Header/Header'
+import Footer from '@/components/Footer/Footer'
 import './globals.scss'
 
 const notoSansJP = Noto_Sans_JP({
