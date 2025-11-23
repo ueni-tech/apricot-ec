@@ -1,5 +1,7 @@
 import type { Metadata } from 'next'
 import { Noto_Sans_JP, Roboto, Damion } from 'next/font/google'
+import Header from '@/components/Header/Header'
+import Footer from '@/components/Footer/Footer'
 import './globals.scss'
 
 const notoSansJP = Noto_Sans_JP({
@@ -23,13 +25,19 @@ const damion = Damion({
 export const metadata: Metadata = {
   title: 'APRICOT - Elegance & Mignonne | アプリコット レディースファッション通販',
   description: 'あなたのお気に入りがみつかる。レディースファッション通販のアプリコットです。',
+  robots: {
+    index: false,
+    follow: false,
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="ja">
       <body className={`${notoSansJP.variable} ${roboto.variable} ${damion.variable}`}>
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   )
