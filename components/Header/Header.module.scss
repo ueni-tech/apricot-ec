@@ -1,0 +1,262 @@
+/* ヘッダー */
+.header {
+  background-color: var(--mainColor);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 998;
+}
+
+.header_inner {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-right: 27px;
+}
+
+.humbBtn {
+  display: none;
+}
+
+.header_body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.siteTitle {
+  display: inline;
+  font-size: 2.3125rem;
+  font-family: var(--font-en);
+  letter-spacing: 0.097em;
+}
+
+.siteSubtitle {
+  margin-left: 39px;
+  font-family: 'Damion', cursive;
+  font-size: 1.625rem;
+  letter-spacing: 0.09em;
+}
+
+.header_list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.searchBar_wrapper {
+  border-bottom: 1px solid #707070;
+}
+
+.searchBar_wrapperSp {
+  display: none;
+}
+
+.searchBar_input {
+  width: 157px;
+  padding-bottom: 3.6px;
+}
+
+.searchBar_input::placeholder {
+  color: var(--fontMainColor);
+  font-family: var(--font-en);
+  font-size: 0.875rem;
+  letter-spacing: 0.097em;
+}
+
+.searchBar_btn {
+  width: 14px;
+  height: 14px;
+  background-image: url(/img/top/magnifying-glass-solid.png);
+}
+
+.userIconWrapper {
+  margin-left: 28.5px;
+}
+
+.shoppingCartIconWrapper {
+  margin-left: 20.1px;
+}
+
+/* ハンバーガーメニュー */
+.open body {
+  overflow: hidden;
+}
+
+.humbMenu {
+  display: none;
+  position: fixed;
+  z-index: 997;
+  background-color: #fff;
+  left: 0;
+  right: 0;
+  height: 100%;
+  overflow: auto;
+  padding-bottom: 90px;
+}
+
+.humbMenu_title {
+  font-size: clamp(0.625rem, 2.26vw, 1rem);
+  font-weight: 700;
+  letter-spacing: 0.097em;
+  padding: 13px 20px;
+  border-bottom: 1px solid var(--fontMainColor);
+  color: var(--sectionTitleColor);
+}
+
+.humbMenu_item {
+  font-size: clamp(0.625rem, 2.26vw, 0.875rem);
+  letter-spacing: 0.097em;
+  border-bottom: 1px dotted var(--fontMainColor);
+}
+
+.humbMenu_item:last-child {
+  border-bottom: 1px solid var(--fontMainColor);
+}
+
+.humbMenu_link,
+.humbMenu_btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.active > .humbMenu_chevron {
+  transform: rotate(180deg);
+}
+
+.humbSubMenu {
+  display: none;
+  background-color: var(--mainColor);
+  font-size: 0.875rem;
+}
+
+.humbSubMenu_item:not(:last-child) {
+  border-bottom: 1px solid #fff;
+}
+
+.humbSubMenu_link {
+  display: block;
+  padding: 10px 20px;
+}
+
+@media screen and (max-width: 1400px) {
+  /* ヘッダー --------------------------- */
+  .header_body {
+    text-align: center;
+  }
+
+  .siteTitle {
+    display: block;
+    font-size: 1.7rem;
+  }
+
+  .siteSubtitle {
+    margin-left: 0;
+    font-size: 1rem;
+  }
+
+  .humbBtn {
+    display: block;
+    font-size: 2.5rem;
+    color: var(--fontMainColor);
+    position: relative;
+    z-index: 999;
+  }
+
+  .header_inner {
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
+/* メディアクエリ 959px以下
+------------------------------------------------------------------------------------*/
+@media screen and (max-width: 960px) {
+  /* ヘッダー ----------------------------------------------------- */
+  .searchBar_wrapperPc {
+    display: none;
+  }
+
+  .searchBar_wrapper--sp {
+    display: block;
+    border-bottom: none;
+    position: relative;
+  }
+
+  .searchBar_input::placeholder {
+    font-size: 0.75rem;
+    letter-spacing: 0.097em;
+  }
+
+  .searchBar_wrapper--sp .searchBar_input {
+    display: none;
+    position: absolute;
+    right: -5px;
+    top: 30px;
+    background-color: #fff;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 10px;
+    border: 1px solid var(--fontMainColor);
+    z-index: 999;
+  }
+
+  .searchBar_input.active {
+    display: block;
+  }
+
+  .searchBar_wrapper--sp .searchBar_btn {
+    background-image: none;
+  }
+
+  .header_inner {
+    height: 60px;
+    padding: 0 15px;
+  }
+
+  .humbBtn {
+    font-size: 1.7rem;
+  }
+
+  .header_body {
+    top: 55%;
+  }
+
+  .siteTitle {
+    font-size: 1.2rem;
+    line-height: 0.5;
+  }
+
+  .siteSubtitle {
+    font-size: 0.8rem;
+  }
+
+  .header_list {
+    gap: 15px;
+  }
+
+  .searchBar_btn {
+    width: auto;
+    height: auto;
+  }
+
+  .header_listItem img {
+    height: 20px;
+  }
+
+  .userIconWrapper {
+    margin-left: 0;
+  }
+
+  .shoppingCartIconWrapper {
+    margin-left: 0;
+  }
+}

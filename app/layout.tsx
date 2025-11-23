@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Noto_Sans_JP, Roboto, Damion } from 'next/font/google'
+import Script from 'next/script'
 import Header from '@/components/Header/Header'
 import Footer from '@/components/Footer/Footer'
 import './globals.scss'
@@ -38,6 +39,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Header />
         {children}
         <Footer />
+
+        <Script
+          src="https://kit.fontawesome.com/891a71c277.js"
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   )
