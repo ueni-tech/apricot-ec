@@ -1,7 +1,7 @@
 import MainVisual from '@/app/components/MainVisual/MainVisual'
 import Info from './components/Info/Info'
 import ContentBlock from './components/ContentBlock/ContentBlock'
-import styles from './page.module.css'
+import styles from './page.module.scss'
 
 export default function Home() {
   return (
