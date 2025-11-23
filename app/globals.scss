@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+/* ベース
+----------------------------------------------------- */
+:root {
+  --mainColor: #e9e9e9;
+  --fontMainColor: #707070;
+  --sectionTitleColor: #333;
+  --sp_sectionTtl_fontsize: clamp(0.875rem, 3.33vw, 2rem);
+  --sp_sectionSubTtl_fontsize: clamp(0.625rem, 1.668vw, 1rem);
+}
+
+/* リセットCSS*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--fontMainColor);
+  font-size: 100%;
+  font-family: var(--font-jp), var(--font-en), sans-serif;
+  font-weight: 400;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  vertical-align: bottom;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+button {
+  line-height: 1;
+}
+
+/* レイアウト
+----------------------------------------------------- */
+.contentWidth {
+  max-width: 1400px;
+  margin: 0 auto;
+}
