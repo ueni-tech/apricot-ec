@@ -1,6 +1,41 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
 .searchpage {
   margin-top: 103px;
   padding-right: 75px;
   padding-left: 75px;
   padding-bottom: 132px;
+
+  @include tablet {
+    margin-top: 121px;
+  }
+
+  @include mobile {
+    margin-top: 70px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .item_card {
+    max-width: 232px;
+  }
+
+  .swiper_button_prev,
+  .swiper_button_next {
+    @include mobile {
+      display: none;
+    }
+  }
+}
+
+.slider04 {
+  @include mobile {
+    width: 100%;
+    overflow: visible;
+
+    :global(.swiper-slide) {
+      min-width: 108px;
+    }
+  }
 }

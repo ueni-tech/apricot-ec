@@ -12,10 +12,10 @@ export default function Header() {
 
   return (
     <header className={styles.header}>
-      <div className={`${styles.header_inner} contentWidth`}>
+      <div className={`${styles.header_inner} content_width`}>
         <button
           type="button"
-          className={styles.humbBtn}
+          className={styles.humb_btn}
           onClick={toggleMenu}
           aria-label="メニューを開く"
         >
@@ -23,38 +23,38 @@ export default function Header() {
         </button>
         <div className={styles.header_body}>
           <Link href="/" className={styles.header_link}>
-            <h1 className={styles.siteTitle}>APRICOT</h1>
-            <span className={styles.siteSubtitle}>Elegance & Mignonne</span>
+            <h1 className={styles.site_title}>APRICOT</h1>
+            <span className={styles.site_subtitle}>Elegance & Mignonne</span>
           </Link>
         </div>
         <div className={styles.header_menu}>
           <ul className={styles.header_list}>
             <li
-              className={`${styles.header_listItem} ${styles.searchBar_wrapper} ${styles.searchBar_wrapperPc}`}
+              className={`${styles.header_list_item} ${styles.search_bar_wrapper} ${styles.search_bar_wrapper_pc}`}
             >
               <form action="#" className="form">
-                <input className={styles.searchBar_input} type="text" placeholder="SEARCH" />
-                <button className={styles.searchBar_btn}></button>
+                <input className={styles.search_bar_input} type="text" placeholder="SEARCH" />
+                <button className={styles.search_bar_btn}></button>
               </form>
             </li>
             <li
-              className={`${styles.header_listItem} ${styles.searchBar_wrapper} ${styles.searchBar_wrapperSp}`}
+              className={`${styles.header_list_item} ${styles.search_bar_wrapper} ${styles.search_bar_wrapper_sp}`}
             >
               <form action="#" className="form">
-                <Link href="#" className="searchBar_btn">
+                <Link href="#" className="searchBarBtn">
                   <Image
-                    className={styles.searchBarIcon}
+                    className={styles.search_bar_icon}
                     src="/img/top/magnifying-glass-icon.png"
                     alt="検索ボタン"
                     width={20}
                     height={20}
                   />
                 </Link>
-                <input className={styles.searchBar_input} type="text" placeholder="SEARCH" />
+                <input className={styles.search_bar_input} type="text" placeholder="SEARCH" />
               </form>
             </li>
-            <li className={`${styles.header_listItem} ${styles.userIconWrapper}`}>
-              <Link href="#" className={styles.headerMenu_link}>
+            <li className={`${styles.header_list_item} ${styles.user_icon_wrapper}`}>
+              <Link href="#" className={styles.header_menu_link}>
                 <Image
                   className="userIcon"
                   src="/img/top/user-solid.png"
@@ -64,8 +64,8 @@ export default function Header() {
                 />
               </Link>
             </li>
-            <li className={`${styles.header_listItem} ${styles.shoppingCartIconWrapper}`}>
-              <Link href="#" className={styles.headerMenu_link}>
+            <li className={`${styles.header_list_item} ${styles.shopping_cart_icon_wrapper}`}>
+              <Link href="#" className={styles.header_menu_link}>
                 <Image
                   className="shoppingCartIcon"
                   src="/img/top/cart-shopping-solid.png"
@@ -78,7 +78,7 @@ export default function Header() {
           </ul>
         </div>
       </div>
-      <nav className={styles.humbMenu}>{/* ハンバーガーメニューのコンテンツ */}</nav>
+      <nav className={styles.humb_menu}>{/* ハンバーガーメニューのコンテンツ */}</nav>
     </header>
   )
 }

@@ -43,7 +43,7 @@ export default function Slider({
   }
 
   return (
-    <div className={`${styles.swiperBlock} ${styles[variant]}`}>
+    <div className={`${styles.swiper_block} ${styles[variant]}`}>
       <Swiper {...swiperConfig} className={styles.slider}>
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>

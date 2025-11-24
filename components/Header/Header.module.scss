@@ -1,4 +1,6 @@
-/* ヘッダー */
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
 .header {
   background-color: var(--mainColor);
   position: fixed;
@@ -12,13 +14,34 @@
   position: relative;
   display: flex;
   justify-content: flex-end;
-  padding-top: 13px;
-  padding-bottom: 13px;
-  padding-right: 27px;
+  padding: 13px 27px 13px 0;
+
+  @include tablet {
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 20px 13px;
+  }
+
+  @include mobile {
+    height: 60px;
+    padding: 0 15px;
+  }
 }
 
-.humbBtn {
+.humb_btn {
   display: none;
+  font-size: 2.5rem;
+  color: var(--fontMainColor);
+  position: relative;
+  z-index: 999;
+
+  @include tablet {
+    display: block;
+  }
+
+  @include mobile {
+    font-size: 1.7rem;
+  }
 }
 
 .header_body {
@@ -26,237 +49,212 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  @include tablet {
+    text-align: center;
+  }
+
+  @include mobile {
+    top: 55%;
+  }
 }
 
-.siteTitle {
+.site_title {
   display: inline;
   font-size: 2.3125rem;
-  font-family: var(--font-en);
+  font-family: var(--fontEN);
   letter-spacing: 0.097em;
+
+  @include tablet {
+    display: block;
+    font-size: 1.7rem;
+  }
+
+  @include mobile {
+    font-size: 1.2rem;
+    line-height: 0.5;
+  }
 }
 
-.siteSubtitle {
+.site_subtitle {
   margin-left: 39px;
-  font-family: 'Damion', cursive;
+  font-family: var(--fontDamion);
   font-size: 1.625rem;
   letter-spacing: 0.09em;
+
+  @include tablet {
+    margin-left: 0;
+    font-size: 1rem;
+  }
+
+  @include mobile {
+    font-size: 0.8rem;
+  }
 }
 
 .header_list {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+
+  @include mobile {
+    gap: 15px;
+  }
 }
 
-.searchBar_wrapper {
-  border-bottom: 1px solid #707070;
+.search_bar_wrapper {
+  border-bottom: 1px solid $fontMainColor;
 }
 
-.searchBar_wrapperSp {
+.search_bar_wrapper_pc {
+  @include mobile {
+    display: none;
+  }
+}
+
+.search_bar_wrapper_sp {
   display: none;
+  border-bottom: none;
+  position: relative;
+
+  @include mobile {
+    display: block;
+  }
 }
 
-.searchBar_input {
+.search_bar_input {
   width: 157px;
   padding-bottom: 3.6px;
+
+  &::placeholder {
+    color: var(--fontMainColor);
+    font-family: var(--fontEN);
+    font-size: 0.875rem;
+    letter-spacing: 0.097em;
+
+    @include mobile {
+      font-size: 0.75rem;
+    }
+  }
+
+  @include mobile {
+    display: none;
+    position: absolute;
+    right: -5px;
+    top: 30px;
+    background-color: $white;
+    padding: 3px 10px;
+    border: 1px solid $fontMainColor;
+    z-index: 999;
+
+    &.active {
+      display: block;
+    }
+  }
 }
 
-.searchBar_input::placeholder {
-  color: var(--fontMainColor);
-  font-family: var(--font-en);
-  font-size: 0.875rem;
-  letter-spacing: 0.097em;
-}
-
-.searchBar_btn {
+.search_bar_btn {
   width: 14px;
   height: 14px;
-  background-image: url(/img/top/magnifying-glass-solid.png);
+  background-image: url('/img/top/magnifying-glass-solid.png');
+
+  @include mobile {
+    width: auto;
+    height: auto;
+    background-image: none;
+  }
 }
 
-.userIconWrapper {
-  margin-left: 28.5px;
-}
-
-.shoppingCartIconWrapper {
-  margin-left: 20.1px;
-}
-
-/* ハンバーガーメニュー */
-.open body {
-  overflow: hidden;
-}
-
-.humbMenu {
+.humb_menu {
   display: none;
   position: fixed;
   z-index: 997;
-  background-color: #fff;
+  background-color: $white;
   left: 0;
   right: 0;
   height: 100%;
   overflow: auto;
   padding-bottom: 90px;
+
+  &.open {
+    display: block;
+  }
 }
 
-.humbMenu_title {
+.humb_menu_title {
   font-size: clamp(0.625rem, 2.26vw, 1rem);
   font-weight: 700;
   letter-spacing: 0.097em;
   padding: 13px 20px;
-  border-bottom: 1px solid var(--fontMainColor);
-  color: var(--sectionTitleColor);
+  border-bottom: 1px solid $fontMainColor;
+  color: $sectionTitleColor;
 }
 
-.humbMenu_item {
+.humb_menu_item {
   font-size: clamp(0.625rem, 2.26vw, 0.875rem);
   letter-spacing: 0.097em;
-  border-bottom: 1px dotted var(--fontMainColor);
+  border-bottom: 1px dotted $fontMainColor;
+
+  &:last-child {
+    border-bottom: 1px solid $fontMainColor;
+  }
 }
 
-.humbMenu_item:last-child {
-  border-bottom: 1px solid var(--fontMainColor);
-}
-
-.humbMenu_link,
-.humbMenu_btn {
+.humb_menu_link,
+.humb_menu_btn {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
 }
 
-.active > .humbMenu_chevron {
-  transform: rotate(180deg);
+.active {
+  > .humb_menu_chevron {
+    transform: rotate(180deg);
+  }
 }
 
-.humbSubMenu {
+.humb_sub_menu {
   display: none;
-  background-color: var(--mainColor);
+  background-color: $mainColor;
   font-size: 0.875rem;
+
+  &.open {
+    display: block;
+  }
 }
 
-.humbSubMenu_item:not(:last-child) {
-  border-bottom: 1px solid #fff;
+.humb_sub_menu_item {
+  &:not(:last-child) {
+    border-bottom: 1px solid $white;
+  }
 }
 
-.humbSubMenu_link {
+.humb_sub_menu_link {
   display: block;
   padding: 10px 20px;
 }
 
-@media screen and (max-width: 1400px) {
-  /* ヘッダー --------------------------- */
-  .header_body {
-    text-align: center;
-  }
+.user_icon_wrapper {
+  margin-left: 28.5px;
 
-  .siteTitle {
-    display: block;
-    font-size: 1.7rem;
-  }
-
-  .siteSubtitle {
+  @include mobile {
     margin-left: 0;
-    font-size: 1rem;
-  }
-
-  .humbBtn {
-    display: block;
-    font-size: 2.5rem;
-    color: var(--fontMainColor);
-    position: relative;
-    z-index: 999;
-  }
-
-  .header_inner {
-    justify-content: space-between;
-    align-items: center;
-    padding-right: 20px;
-    padding-left: 20px;
   }
 }
 
-/* メディアクエリ 959px以下
-------------------------------------------------------------------------------------*/
-@media screen and (max-width: 960px) {
-  /* ヘッダー ----------------------------------------------------- */
-  .searchBar_wrapperPc {
-    display: none;
-  }
+.shopping_cart_icon_wrapper {
+  margin-left: 20.1px;
 
-  .searchBar_wrapper--sp {
-    display: block;
-    border-bottom: none;
-    position: relative;
-  }
-
-  .searchBar_input::placeholder {
-    font-size: 0.75rem;
-    letter-spacing: 0.097em;
-  }
-
-  .searchBar_wrapper--sp .searchBar_input {
-    display: none;
-    position: absolute;
-    right: -5px;
-    top: 30px;
-    background-color: #fff;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    padding-left: 10px;
-    border: 1px solid var(--fontMainColor);
-    z-index: 999;
-  }
-
-  .searchBar_input.active {
-    display: block;
-  }
-
-  .searchBar_wrapper--sp .searchBar_btn {
-    background-image: none;
-  }
-
-  .header_inner {
-    height: 60px;
-    padding: 0 15px;
-  }
-
-  .humbBtn {
-    font-size: 1.7rem;
-  }
-
-  .header_body {
-    top: 55%;
-  }
-
-  .siteTitle {
-    font-size: 1.2rem;
-    line-height: 0.5;
-  }
-
-  .siteSubtitle {
-    font-size: 0.8rem;
-  }
-
-  .header_list {
-    gap: 15px;
-  }
-
-  .searchBar_btn {
-    width: auto;
-    height: auto;
-  }
-
-  .header_listItem img {
-    height: 20px;
-  }
-
-  .userIconWrapper {
+  @include mobile {
     margin-left: 0;
   }
+}
 
-  .shoppingCartIconWrapper {
-    margin-left: 0;
+.header_list_item {
+  img {
+    @include mobile {
+      height: 20px;
+    }
   }
 }

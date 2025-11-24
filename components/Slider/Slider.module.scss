@@ -1,77 +1,75 @@
-/* スワイパー 共通 */
-.swiper {
-  height: auto;
-}
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
 
-.swiperBlock {
+.swiper_block {
   position: relative;
-}
 
-/* 前・次スライドボタンの縦位置調整（スライドの高さの中央に合わせる） */
-:global(.swiper-button-prev),
-:global(.swiper-button-next) {
-  top: calc((100% - 50px) * 0.5);
-  /* ☆★ページネーション・スクロールバー（50px）を除く縦位置の中央（＝スライドの高さの中央）に一旦配置 */
-  margin-top: -18px;
-  /* ★ボタンの高さ（44px）の半分のネガティブマージンで上に少しずらす */
-  --swiper-navigation-color: #707070;
-}
+  :global(.swiper-button-prev),
+  :global(.swiper-button-next) {
+    top: calc((100% - 50px) * 0.5);
+    margin-top: -18px;
+    --swiper-navigation-color: #{$fontMainColor};
+  }
 
-:global(.swiper-button-prev) {
-  left: 0;
-}
+  :global(.swiper-button-prev) {
+    left: 0;
+  }
 
-:global(.swiper-button-next) {
-  right: 0;
-}
-
-/* slider01 メインビジュアル
--------------------------------------------------*/
-:global(.swiper-pagination-bullet) {
-  height: 15px;
-  width: 15px;
-}
-
-@media screen and (max-width: 960px) {
-  :global(.swiper-pagination-bullet) {
-    height: clamp(5px, 1.56vw, 15px);
-    width: clamp(5px, 1.56vw, 15px);
+  :global(.swiper-button-next) {
+    right: 0;
   }
 }
 
-:global(.swiper-pagination-bullet-active) {
-  background-color: #fff;
+.slider {
+  height: auto;
 }
 
-/* slider02 ピックアップ
--------------------------------------------------*/
+// バリアント別のスタイル
+.main {
+  :global(.swiper-pagination-bullet) {
+    height: 15px;
+    width: 15px;
 
-.slider02 {
-  width: calc(100% - 100px);
-  /* ☆前・次ページボタンの幅をそれぞれ50pxとして、その分を引く */
-  padding-bottom: 50px;
-  /* ★ページネーション・スクロールバー分の余白50pxを下に取る */
+    @include mobile {
+      height: clamp(5px, 1.56vw, 15px);
+      width: clamp(5px, 1.56vw, 15px);
+    }
+  }
+
+  :global(.swiper-pagination-bullet-active) {
+    background-color: $white;
+  }
 }
 
-/* slider03 レコメンド
--------------------------------------------------*/
-.slider03 {
-  width: calc(100% - 100px);
-  /* ☆前・次ページボタンの幅をそれぞれ50pxとして、その分を引く */
+.pickup {
+  .slider {
+    width: calc(100% - 100px);
+    padding-bottom: 50px;
+  }
 }
 
-.itempage :global(.swiper-button-prev),
-.itempage :global(.swiper-button-next) {
-  margin-top: -45px;
+.recommend {
+  .slider {
+    width: calc(100% - 100px);
+
+    @include mobile {
+      width: 88%;
+    }
+  }
 }
 
-/* slider04 レコメンド
--------------------------------------------------*/
-.slider04 {
-  width: 88%;
+// itempage用のスライダー
+.itempage {
+  :global(.swiper-button-prev),
+  :global(.swiper-button-next) {
+    margin-top: -45px;
+  }
 }
 
-.searchpage :global(.swiper-button-prev),
-.searchpage :global(.swiper-button-next) {
-  margin-top: -48px;
+// searchpage用のスライダー
+.searchpage {
+  :global(.swiper-button-prev),
+  :global(.swiper-button-next) {
+    margin-top: -48px;
+  }
 }

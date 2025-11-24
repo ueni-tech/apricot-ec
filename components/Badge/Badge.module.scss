@@ -1,39 +1,44 @@
+@use '../../styles/variables' as *;
+
 .badge {
   display: inline-block;
   font-size: 0.625rem;
   letter-spacing: 0.005em;
-  color: #fff;
+  color: $white;
   border-radius: 2px;
   width: 36px;
-  padding-top: 3px;
-  padding-bottom: 3px;
+  padding: 3px 0;
   text-align: center;
+
+  &.long {
+    width: 53px;
+  }
+
+  &.new {
+    background-color: #f7d3ad;
+  }
+
+  &.popular {
+    background-color: #f7adad;
+  }
+
+  &.re {
+    background-color: #adc1f7;
+  }
+
+  &.discount {
+    background-color: #f69494;
+  }
+
+  &.scheduled {
+    background-color: #cccccc;
+  }
+
+  &.arrived {
+    background-color: #d2c1f1;
+  }
 }
 
-.badge--long {
-  width: 53px;
-}
-
-.new {
-  background-color: #f7d3ad;
-}
-
-.popular {
-  background-color: #f7adad;
-}
-
-.re {
-  background-color: #adc1f7;
-}
-
-.discount {
-  background-color: #f69494;
-}
-
-.scheduled {
-  background-color: #cccccc;
-}
-
-.arrived {
-  background-color: #d2c1f1;
+.badge_text {
+  margin: 0;
 }

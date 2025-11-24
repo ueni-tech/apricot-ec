@@ -1,0 +1,52 @@
+@use '../../../styles/variables' as *;
+@use '../../../styles/mixins' as *;
+
+.itempage {
+  margin-top: 103px;
+  padding-right: 75px;
+  padding-left: 75px;
+  padding-bottom: 148px;
+
+  @include tablet {
+    margin-top: 121px;
+  }
+
+  @include mobile {
+    margin-top: 70px;
+    padding-right: 15px;
+    padding-bottom: 130px;
+    padding-left: 15px;
+  }
+
+  .recommend {
+    .badge {
+      @include mobile {
+        display: none;
+      }
+    }
+  }
+
+  .swiper_button_prev,
+  .swiper_button_next {
+    @include mobile {
+      display: none;
+    }
+  }
+}
+
+.swiper_block {
+  @include mobile {
+    overflow: hidden;
+  }
+}
+
+.slider03 {
+  @include mobile {
+    width: 100%;
+    overflow: visible;
+
+    :global(.swiper-slide) {
+      min-width: 108px;
+    }
+  }
+}

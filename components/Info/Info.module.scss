@@ -1,0 +1,93 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.info_inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 39px;
+
+  @include mobile {
+    padding-top: 30px;
+  }
+}
+
+.info_title {
+  font-family: var(--fontEN);
+  font-size: 2.25rem;
+  letter-spacing: 0.09em;
+  color: $sectionTitleColor;
+
+  @include mobile {
+    font-size: var(--sp_sectionTtl_fontsize);
+  }
+}
+
+.info_subtitle {
+  font-size: 1rem;
+  letter-spacing: 0.09em;
+
+  @include mobile {
+    font-size: var(--sp_sectionSubTtl_fontsize);
+  }
+}
+
+.info_list {
+  width: 57.2%;
+  margin-top: 18px;
+
+  @include mobile {
+    width: 82%;
+    margin-top: 10px;
+  }
+}
+
+.info_link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 13.5px;
+  padding-bottom: 13.5px;
+}
+
+.info_list_item {
+  border-bottom: 1px solid $fontMainColor;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.info_date {
+  font-family: var(--fontEN);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.09em;
+  color: #aaa;
+  margin-bottom: 2px;
+
+  @include mobile {
+    font-size: 0.625rem;
+    margin-bottom: 0;
+  }
+}
+
+.info_text {
+  font-size: 0.75rem;
+  letter-spacing: 0.09em;
+  color: #111;
+
+  @include mobile {
+    font-size: 0.0625rem;
+  }
+}
+
+.info_chevron {
+  width: 7.43px;
+  height: 13px;
+
+  @include mobile {
+    width: auto;
+    height: 10px;
+  }
+}

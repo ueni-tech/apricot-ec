@@ -20,13 +20,13 @@ export default function Gallery({ images, alt = '商品画像' }: GalleryProps) 
   const [thumbsSwiper, setThumbsSwiper] = useState<SwiperType | null>(null)
 
   return (
-    <div className={styles.galleryWrapper}>
+    <div className={styles.gallery_wrapper}>
       <Swiper
         modules={[Thumbs, Navigation, EffectFade]}
         thumbs={{ swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null }}
         navigation={{
-          nextEl: `.${styles.swiperNext}`,
-          prevEl: `.${styles.swiperPrev}`,
+          nextEl: `.${styles.swiper_next}`,
+          prevEl: `.${styles.swiper_prev}`,
         }}
         loop={true}
         effect="fade"
@@ -51,7 +51,7 @@ export default function Gallery({ images, alt = '商品画像' }: GalleryProps) 
         spaceBetween={10}
         loop={true}
         watchSlidesProgress={true}
-        className={styles.choiceBtn}
+        className={styles.choice_btn}
       >
         {images.map((image, index) => (
           <SwiperSlide key={index}>
@@ -60,8 +60,8 @@ export default function Gallery({ images, alt = '商品画像' }: GalleryProps) 
         ))}
       </Swiper>
 
-      <div className={styles.swiperPrev}></div>
-      <div className={styles.swiperNext}></div>
+      <div className={styles.swiper_prev}></div>
+      <div className={styles.swiper_next}></div>
     </div>
   )
 }

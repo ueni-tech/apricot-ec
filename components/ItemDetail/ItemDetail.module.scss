@@ -1,0 +1,405 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.item_detail {
+  display: flex;
+  justify-content: space-between;
+  gap: 75px;
+  padding-bottom: 87px;
+
+  @include tablet {
+    display: block;
+    padding-bottom: 10px;
+  }
+}
+
+.item_detail_descriptionSp {
+  display: none;
+
+  @include tablet {
+    display: block;
+    margin: 47px auto 47px;
+  }
+
+  @include mobile {
+    margin-top: 30px;
+    margin-bottom: 32px;
+  }
+}
+
+.item_detail_descriptionPc {
+  @include tablet {
+    display: none;
+  }
+}
+
+.item_detail_left_content {
+  max-width: 560px;
+
+  @include tablet {
+    margin: 0 auto;
+  }
+}
+
+.item_tag_block {
+  margin-top: 72px;
+
+  @include tablet {
+    margin-top: 30px;
+  }
+}
+
+.item_tag_title {
+  letter-spacing: 0.08em;
+  margin-bottom: 21px;
+
+  @include mobile {
+    font-size: clamp(0.75rem, 1.67vw, 1rem);
+  }
+}
+
+.item_tagWrapper {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+
+  @include mobile {
+    gap: 10px;
+  }
+}
+
+.item_tagItem {
+  letter-spacing: 0.08em;
+  padding: 10px 20px;
+  background-color: $mainColor;
+  border: 1px solid #bfbfbf;
+  border-radius: 20px 5px 5px 5px;
+
+  @include mobile {
+    padding: 8px 17px;
+    font-size: clamp(0.625rem, 1.67vw, 1rem);
+  }
+}
+
+.item_detail_right_content {
+  padding-right: 16px;
+
+  @include tablet {
+    max-width: 960px;
+    margin: 60px auto 0;
+    padding-right: 0;
+  }
+
+  @include mobile {
+    margin-top: 50px;
+  }
+}
+
+.item_detail_header {
+  margin-bottom: 18px;
+
+  @include mobile {
+    margin-bottom: 5px;
+  }
+}
+
+.item_detail {
+  .badge {
+    margin-right: 12px;
+  }
+}
+
+.item_detail_name {
+  margin-top: 5px;
+  font-size: 1.125rem;
+  letter-spacing: 0.08em;
+
+  @include mobile {
+    font-size: clamp(0.75rem, 1.875vw, 1.125rem);
+  }
+}
+
+.item_detail_price {
+  font-size: 1.625rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+
+  @include mobile {
+    font-size: clamp(1rem, 2.711vw, 1.625rem);
+  }
+
+  span {
+    font-size: 0.875rem;
+    font-weight: 400;
+    margin-left: 10px;
+
+    @include mobile {
+      font-size: clamp(0.625rem, 1.45vw, 0.875rem);
+    }
+  }
+}
+
+.item_detailPoint {
+  margin-top: 10px;
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+
+  @include mobile {
+    font-size: clamp(0.625rem, 1.45vw, 0.875rem);
+  }
+}
+
+.item_detail_point_icon {
+  margin-right: 5px;
+
+  @include mobile {
+    height: clamp(10px, 1.45vw, 14px);
+  }
+}
+
+.item_detail_sns_shareWrapper {
+  margin-top: 11px;
+  display: flex;
+  align-items: center;
+}
+
+.item_detail_sns_share_icon {
+  margin-right: 18px;
+}
+
+.item_detail_sns_shareList {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.item_detail_sns_shareItem {
+  .fa-brands {
+    font-size: 1.375rem;
+
+    @include mobile {
+      font-size: clamp(0.9375rem, 2.3vw, 1.375rem);
+    }
+  }
+}
+
+.cart_item_container {
+  margin-top: 57px;
+
+  @include tablet {
+    margin: 0 auto;
+  }
+
+  @include mobile {
+    max-width: 560px;
+  }
+}
+
+.cart_itemList {
+  display: flex;
+  align-items: center;
+
+  @include tablet {
+    justify-content: center;
+  }
+
+  @include mobile {
+    justify-content: flex-start;
+    gap: 30px;
+    margin-bottom: 20px;
+  }
+}
+
+.cart_itemColor {
+  margin-right: 53px;
+
+  @include mobile {
+    margin-right: 0;
+  }
+}
+
+.cart_item_action {
+  display: flex;
+  align-items: flex-end;
+
+  @include mobile {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.size_color {
+  margin-right: 44px;
+
+  @include mobile {
+    margin-right: 0;
+  }
+}
+
+.size_colorColor {
+  letter-spacing: 0.08em;
+  margin-bottom: 9px;
+
+  @include mobile {
+    font-size: clamp(0.625rem, 1.67vw, 1rem);
+  }
+}
+
+.size_colorSize {
+  letter-spacing: 0.08em;
+  color: #222;
+  border: 1px solid $fontMainColor;
+  width: 225px;
+  padding-top: 8px;
+  padding-bottom: 7px;
+  padding-left: 20px;
+
+  @include mobile {
+    font-size: clamp(0.75rem, 1.67vw, 1rem);
+    padding-top: 6px;
+    padding-bottom: 6px;
+    width: clamp(192px, 23.46vw, 225px);
+  }
+}
+
+.cart_btn {
+  background-color: #464646;
+  border-radius: 5px;
+  color: $white;
+  padding: 11px 0;
+  width: 192px;
+  text-align: center;
+
+  @include mobile {
+    margin-top: 15px;
+    font-size: clamp(0.75rem, 1.67vw, 1rem);
+    width: clamp(192px, 23.46vw, 225px);
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+
+  span {
+    background-image: url('/img/item/cart-shopping-solid.png');
+    background-position: center right;
+    padding-right: 44px;
+  }
+}
+
+.item_info {
+  margin-top: 155px;
+  height: 600px;
+
+  @include tablet {
+    margin-top: 170px;
+  }
+
+  @include mobile {
+    max-width: 560px;
+    margin: 130px auto 0;
+  }
+}
+
+.item_tab_menu {
+  position: relative;
+  border-bottom: 2px solid $fontMainColor;
+}
+
+.item_tab_menuList {
+  display: flex;
+  gap: 19px;
+  padding-left: 20px;
+}
+
+.item_tab_menu_btn {
+  letter-spacing: 0.08em;
+  text-align: center;
+}
+
+.tab_itemintro {
+  top: -61px;
+  left: 20px;
+
+  @include mobile {
+    top: -42px;
+  }
+}
+
+.tab_itemsize {
+  top: -61px;
+  left: 217px;
+
+  @include mobile {
+    top: -42px;
+    left: clamp(164px, 22.62vw, 217px);
+  }
+}
+
+.item_tab_menu_link {
+  position: absolute;
+  display: inline-block;
+  width: 179px;
+  padding-top: 19px;
+  padding-bottom: 19px;
+  border: 1px solid $fontMainColor;
+  border-bottom: none;
+
+  @include mobile {
+    width: clamp(127px, 18.66vw, 179px);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 0.875rem;
+  }
+}
+
+.tab_active {
+  pointer-events: none;
+  background-color: $mainColor;
+  border: 2px solid $fontMainColor;
+  border-bottom: none;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.item_tab_content {
+  padding-top: 66px;
+  padding-right: 47px;
+  padding-left: 47px;
+
+  @include mobile {
+    width: 87%;
+    padding-top: 30px;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 auto;
+  }
+}
+
+.item_description {
+  font-size: 1.125rem;
+  letter-spacing: 0.04em;
+  line-height: 1.777;
+
+  @include mobile {
+    font-size: clamp(0.75rem, 1.88vw, 1.125rem);
+  }
+}
+
+.table_item_detail {
+  margin: 0 auto;
+
+  @include mobile {
+    margin: 0;
+  }
+}
+
+.table_itemSize {
+  margin: 43px auto 0;
+
+  @include mobile {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

@@ -1,4 +1,139 @@
+@use '../styles/variables' as *;
+@use '../styles/mixins' as *;
+
 .toppage {
   padding-bottom: 152px;
   padding-top: 53px;
+
+  @include tablet {
+    padding-top: 68px;
+  }
+
+  @include mobile {
+    padding-top: 60px;
+    padding-bottom: 124px;
+  }
+
+  .badge,
+  .searchpage .badge {
+    @include mobile {
+      display: none;
+    }
+  }
+}
+
+// 新着コーデ
+.styling_card_body {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.styling_card_face {
+  margin-right: 12px;
+
+  @include mobile {
+    margin-right: 4px;
+    width: clamp(25px, 3.75vw, 36px);
+  }
+}
+
+.styling_card_desc {
+  font-size: 0.75rem;
+  letter-spacing: 0.097em;
+
+  @include mobile {
+    font-size: clamp(0.625rem, 1.25vw, 0.75rem);
+  }
+}
+
+.new_styling_items_wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 57px;
+  justify-items: center;
+
+  @include mobile {
+    gap: 5px;
+  }
+}
+
+// 新着アイテム
+.new_items_items_wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+
+  @include mobile {
+    gap: 5px;
+  }
+}
+
+// アイテムランキング
+.item_ranking_items_wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  align-items: baseline;
+
+  @include mobile {
+    gap: 5px;
+  }
+}
+
+.item_ranking_item {
+  display: flex;
+  flex-direction: column;
+  max-width: 188px;
+}
+
+.ranking_icon {
+  align-self: center;
+  padding-bottom: 5px;
+
+  @include mobile {
+    width: 32%;
+    padding-bottom: 0;
+  }
+
+  &.circle {
+    padding-bottom: 11px;
+
+    @include mobile {
+      width: 16%;
+      padding-bottom: 0.53vw;
+    }
+  }
+}
+
+// 再入荷アイテム
+.restock_items_wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+
+  @include mobile {
+    gap: 5px;
+  }
+}
+
+// 特集
+.pick_up_wrapper {
+  display: none;
+
+  @include mobile {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 700px;
+    margin: 20px auto 0;
+  }
+}
+
+.toppage {
+  .swiper_block {
+    @include mobile {
+      display: none;
+    }
+  }
 }

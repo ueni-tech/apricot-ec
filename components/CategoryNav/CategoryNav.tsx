@@ -27,31 +27,31 @@ export default function CategoryNav({ productTypes, categories }: CategoryNavPro
   }
 
   return (
-    <nav className={styles.sideMenu}>
-      <p className={styles.sideMenu_title}>商品タイプで探す</p>
-      <ul className={styles.sideMenu_list}>
+    <nav className={styles.side_menu}>
+      <p className={styles.side_menu_title}>商品タイプで探す</p>
+      <ul className={styles.side_menu_list}>
         {productTypes.map((item, index) => (
-          <li key={index} className={styles.sideMenu_item}>
-            <Link href={item.href} className={styles.sideMenu_link}>
+          <li key={index} className={styles.side_menu_item}>
+            <Link href={item.href} className={styles.side_menu_link}>
               <span>{item.label}</span>
               <Image
                 src="/img/top/chevron-right-solid.png"
                 alt=""
                 width={7}
                 height={13}
-                className={styles.sideMenu_chevron}
+                className={styles.side_menu_chevron}
               />
             </Link>
           </li>
         ))}
       </ul>
-      <p className={styles.sideMenu_title}>カテゴリから探す</p>
-      <ul className={styles.sideMenu_list}>
+      <p className={styles.side_menu_title}>カテゴリから探す</p>
+      <ul className={styles.side_menu_list}>
         {categories.map((category, index) => (
-          <li key={index} className={`${styles.sideMenu_item} ${styles.hasSub}`}>
+          <li key={index} className={`${styles.side_menu_item} ${styles.has_sub}`}>
             <Link
               href={category.href}
-              className={styles.sideMenu_link}
+              className={styles.side_menu_link}
               onClick={() => category.subItems && toggleCattegory(index)}
             >
               <span>{category.label}</span>
@@ -60,14 +60,14 @@ export default function CategoryNav({ productTypes, categories }: CategoryNavPro
                 alt=""
                 width={7}
                 height={13}
-                className={styles.sideMenu_chevron}
+                className={styles.side_menu_chevron}
               />
             </Link>
             {category.subItems && (
-              <ul className={`${styles.subMenu} ${openCategories[index] ? styles.open : ''}`}>
+              <ul className={`${styles.sub_menu} ${openCategories[index] ? styles.open : ''}`}>
                 {category.subItems.map((subItem, subIndex) => (
-                  <li key={subIndex} className={styles.subMenu_item}>
-                    <Link href={subItem.href} className={styles.subMenu_link}>
+                  <li key={subIndex} className={styles.sub_menu_item}>
+                    <Link href={subItem.href} className={styles.sub_menu_link}>
                       {subItem.label}
                     </Link>
                   </li>

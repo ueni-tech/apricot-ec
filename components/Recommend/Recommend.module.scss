@@ -1,0 +1,22 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.recommend {
+  padding-right: 75px;
+  padding-left: 75px;
+
+  @include tablet {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.recommend_title {
+  font-size: 1.125rem;
+  letter-spacing: 0.08em;
+  margin-bottom: 39px;
+
+  @include mobile {
+    font-size: clamp(0.75rem, 1.88vw, 1.125rem);
+  }
+}

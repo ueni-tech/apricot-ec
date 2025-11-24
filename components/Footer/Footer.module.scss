@@ -1,4 +1,6 @@
-/* フッター */
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
 .footer {
   background-color: #f5fbff;
 }
@@ -20,7 +22,7 @@
   letter-spacing: 0.08em;
 }
 
-.footer_titleSns {
+.footer_title_sns {
   font-weight: 500;
   letter-spacing: 0.08em;
 }
@@ -34,8 +36,8 @@
   letter-spacing: 0.08em;
 }
 
-.footer_ItemEn {
-  font-family: var(--font-en);
+.footer__item_en {
+  font-family: var(--fontEN);
 }
 
 .footer_Item:not(:first-child) {
@@ -60,7 +62,7 @@
   padding-bottom: 20px;
   font-size: 0.75rem;
   letter-spacing: 0.08em;
-  font-family: var(--font-en);
+  font-family: var(--fontEN);
 }
 
 @media screen and (max-width: 960px) {
@@ -94,18 +96,18 @@
     background-color: var(--mainColor);
   }
 
-  .footer_contentSns {
+  .footer_content_sns {
     display: flex;
     align-items: center;
     padding: 8px 15px;
   }
 
-  .footer_contentSns .footer_title {
+  .footer_content_sns .footer_title {
     cursor: auto;
     padding: 0;
   }
 
-  .footer_contentSns .footer_list {
+  .footer_content_sns .footer_list {
     display: flex;
     align-items: center;
     background-color: inherit;
@@ -131,7 +133,7 @@
     padding: 8px 15px;
   }
 
-  .footer_contentSns .footer_Item a {
+  .footer_content_sns .footer_Item a {
     padding: 0;
     line-height: 1;
   }

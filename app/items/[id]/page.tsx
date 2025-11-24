@@ -41,7 +41,7 @@ export default async function ItemPage({ params }: Props) {
   ]
 
   return (
-    <div className={`${styles.itempage} contentWidth`}>
+    <div className={`${styles.itempage} content_width`}>
       <Breadcrumbs items={breadcrumbs} />
       <ItemDetail product={product} />
       <Recommend productId={product.id} />

@@ -1,0 +1,54 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.breadcrumbs {
+  &.itempage {
+    margin-bottom: 32px;
+
+    @include tablet {
+      margin-bottom: 53px;
+    }
+
+    @include mobile {
+      margin-bottom: 10px;
+    }
+  }
+
+  &.searchpage {
+    margin-bottom: 40px;
+
+    @include mobile {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.breadcrumbsList {
+  display: flex;
+  list-style-type: none;
+
+  @include mobile {
+    white-space: nowrap;
+    overflow: auto;
+  }
+}
+
+.breadcrumbsItem {
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+
+  @include mobile {
+    display: inline-block;
+    font-size: clamp(0.625rem, 1.25vw, 0.75rem);
+  }
+
+  &::after {
+    content: ">";
+    padding: 0 7px;
+  }
+
+  &:last-child::after {
+    display: none;
+  }
+}
+

@@ -1,0 +1,133 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.sectionTitleWrapper {
+  text-align: center;
+}
+
+.sectionTitle {
+  font-family: var(--fontEN);
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--sectionTitleColor);
+  letter-spacing: 0.097em;
+
+  @include mobile {
+    font-size: var(--sp_sectionTtl_fontsize);
+  }
+}
+
+.sectionSubtitle {
+  letter-spacing: 0.097em;
+
+  @include mobile {
+    font-size: var(--sp_sectionSubTtl_fontsize);
+  }
+}
+
+// View More ボタン
+.viewMoreBtn {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 49px;
+  justify-content: flex-end;
+
+  @include mobile {
+    margin-top: clamp(37px, 7.3vw, 70px);
+  }
+}
+
+.viewMore {
+  font-family: var(--fontEN);
+  font-weight: 500;
+
+  @include mobile {
+    padding-bottom: 0;
+    font-size: clamp(0.625rem, 1.66vw, 1rem);
+  }
+}
+
+.viewMoreChevron {
+  width: 8px;
+  height: 14px;
+  margin-left: 15.3px;
+
+  @include mobile {
+    width: clamp(5.7px, 0.83vw, 8px);
+    margin-left: 15.3px;
+  }
+}
+
+// テーブル
+table {
+  border-collapse: collapse;
+}
+
+.table {
+  border: 1px solid $fontMainColor;
+}
+
+.tableCaption {
+  font-size: 0.875rem;
+  letter-spacing: 0.08em;
+  margin-bottom: 5px;
+  text-align: left;
+
+  @include mobile {
+    font-size: clamp(0.625rem, 1.46vw, 0.875rem);
+  }
+}
+
+.table {
+  th,
+  td {
+    border: 1px solid $fontMainColor;
+    font-size: 0.875rem;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+
+    @include mobile {
+      font-size: clamp(0.625rem, 1.46vw, 0.875rem);
+    }
+  }
+
+  th {
+    background-color: $mainColor;
+  }
+}
+
+.tableItemDetail {
+  margin: 0 auto;
+
+  th {
+    width: 105px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  td {
+    width: 360px;
+    padding: 10px 16px;
+    letter-spacing: 0.08em;
+  }
+}
+
+.tableItemSize {
+  margin: 43px auto 0;
+
+  th:first-child {
+    width: 105px;
+  }
+
+  th {
+    width: 90px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  td {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}

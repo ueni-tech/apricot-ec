@@ -16,9 +16,9 @@ export default function SearchPage() {
   ]
 
   return (
-    <div className={`${styles.searchpage} contentWidth`}>
+    <div className={`${styles.searchpage} content_width`}>
       <Breadcrumbs items={breadcrumbs} />
-      <div className="contentBlock">
+      <div className="content_block">
         <SideMenu />
         <SearchContent />
       </div>

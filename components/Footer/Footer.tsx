@@ -83,7 +83,7 @@ export default function Footer() {
             </ul>
           </div>
         ))}
-        <div className={`${styles.footer_content} ${styles.footer_contentSns}`}>
+        <div className={`${styles.footer_content} ${styles.footer_content_sns}`}>
           <p className={styles.footer_title}>OFFICIAL SNS</p>
           <ul className={styles.footer_list}>
             {snsLinks.map((sns, index) => (

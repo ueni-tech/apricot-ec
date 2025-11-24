@@ -8,19 +8,19 @@ import './globals.scss'
 const notoSansJP = Noto_Sans_JP({
   weight: ['400', '500', '700'],
   subsets: ['latin'],
-  variable: '--font-jp',
+  variable: '--fontJP',
 })
 
 const roboto = Roboto({
   weight: ['400', '500', '700'],
   subsets: ['latin'],
-  variable: '--font-en',
+  variable: '--fontEN',
 })
 
 const damion = Damion({
   weight: '400',
   subsets: ['latin'],
-  variable: '--font-damion',
+  variable: '--fontDamion',
 })
 
 export const metadata: Metadata = {

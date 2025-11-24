@@ -6,10 +6,10 @@ import { ProductCardProps } from '@/types/Product'
 
 export default function ProductCard({ product }: ProductCardProps) {
   return (
-    <Link href={`/items/&{product.id}`} className={styles.itemCardLink}>
-      <div className={styles.itemCard}>
+    <Link href={`/items/&{product.id}`} className={styles.item_card_link}>
+      <div className={styles.item_card}>
         <Image
-          className={styles.itemCardImg}
+          className={styles.item_card_img}
           src={product.image}
           alt={product.name}
           width={188}
@@ -18,10 +18,10 @@ export default function ProductCard({ product }: ProductCardProps) {
         {product.badges?.map((badge, index) => (
           <Badge key={index} type={badge.type} text={badge.text} />
         ))}
-        <p className={styles.itemCardName}>{product.name}</p>
-        <p className={styles.itemCardPrice}>¥{product.price.toLocaleString()}</p>
+        <p className={styles.item_card_name}>{product.name}</p>
+        <p className={styles.item_card_price}>¥{product.price.toLocaleString()}</p>
         {product.discountPrice && (
-          <p className={styles.itemCardDisPrice}>
+          <p className={styles.item_card_dis_price}>
             予約価格 ￥{product.discountPrice.toLocaleString()}
           </p>
         )}

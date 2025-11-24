@@ -1,7 +1,7 @@
 // @use '../../styles/variables' as *;
 // @use '../../styles/mixins' as *;
 
-.galleryWrapper {
+.gallery_wrapper {
   margin-bottom: 21px;
 }
 
@@ -9,7 +9,7 @@
   margin-bottom: 21px;
 }
 
-.choiceBtn {
+.choice_btn {
   :global(.swiper-slide) {
     cursor: pointer;
     outline: none;
@@ -31,8 +31,8 @@
   }
 }
 
-.swiperPrev,
-.swiperNext {
+.swiper_prev,
+.swiper_next {
   position: absolute;
   z-index: 3;
   top: 42%;
@@ -44,12 +44,12 @@
   width: 25px;
 }
 
-.swiperPrev {
+.swiper_prev {
   left: 2.5%;
   transform: rotate(-135deg);
 }
 
-.swiperNext {
+.swiper_next {
   right: 2.5%;
   transform: rotate(45deg);
 }
