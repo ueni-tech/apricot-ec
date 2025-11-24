@@ -65,7 +65,7 @@
   font-family: var(--fontEN);
 }
 
-@media screen and (max-width: 960px) {
+@include mobile {
   /* フッター ----------------------------------------------------- */
   .footer_inner {
     max-width: unset;

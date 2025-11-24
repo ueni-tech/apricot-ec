@@ -1,3 +1,6 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
 .side_menu {
   width: 200px;
   margin-right: 70px;
@@ -76,7 +79,7 @@
   padding-left: 0.5em;
 }
 
-@media screen and (max-width: 1400px) {
+@include tablet {
   .side_menu {
     display: none;
   }
