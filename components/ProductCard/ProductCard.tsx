@@ -2,22 +2,7 @@ import Link from 'next/link'
 import styles from './ProductCard.module.scss'
 import Image from 'next/image'
 import Badge from '@/components/Badge/Badge'
-
-type Product = {
-  id: string
-  name: string
-  price: number
-  discountPrice?: number
-  image: string
-  badges?: Array<{
-    type: 'new' | 'popular' | 're' | 'discount' | 'scheduled' | 'arrived'
-    text: string
-  }>
-}
-
-type ProductCardProps = {
-  product: Product
-}
+import { ProductCardProps } from '@/types/Product'
 
 export default function ProductCard({ product }: ProductCardProps) {
   return (

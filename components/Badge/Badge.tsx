@@ -1,7 +1,8 @@
 import styles from './Badge.module.scss'
+import { BadgeType } from '@/types/Product'
 
 type BadgeProps = {
-  type: 'new' | 'popular' | 're' | 'discount' | 'scheduled' | 'arrived'
+  type: BadgeType
   text: string
   long?: boolean
 }

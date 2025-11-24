@@ -1,5 +1,9 @@
-import React from 'react'
+import { Product } from '@/types/Product'
 
-export default function ItemDetail() {
+type ItemDetailProps = {
+  product: Product
+}
+
+export default function ItemDetail({ product }: ItemDetailProps) {
   return <div>ItemDetail</div>
 }
