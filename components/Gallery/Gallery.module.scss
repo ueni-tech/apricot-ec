@@ -1,0 +1,56 @@
+// @use '../../styles/variables' as *;
+// @use '../../styles/mixins' as *;
+
+.galleryWrapper {
+  margin-bottom: 21px;
+}
+
+.gallery {
+  margin-bottom: 21px;
+}
+
+.choiceBtn {
+  :global(.swiper-slide) {
+    cursor: pointer;
+    outline: none;
+    background: #333;
+    width: 16.6% !important;
+    list-style: none;
+
+    img {
+      opacity: 0.4;
+    }
+
+    &:global(.swiper-slide-thumb-active img) {
+      opacity: 1;
+    }
+  }
+
+  :global(.swiper-track) {
+    transform: unset !important;
+  }
+}
+
+// 矢印のスタイル（既存のslick.cssから移植）
+.swiperPrev,
+.swiperNext {
+  position: absolute;
+  z-index: 3;
+  top: 42%;
+  cursor: pointer;
+  outline: none;
+  border-top: 2px solid #ccc;
+  border-right: 2px solid #ccc;
+  height: 25px;
+  width: 25px;
+}
+
+.swiperPrev {
+  left: 2.5%;
+  transform: rotate(-135deg);
+}
+
+.swiperNext {
+  right: 2.5%;
+  transform: rotate(45deg);
+}
