@@ -1,0 +1,39 @@
+.badge {
+  display: inline-block;
+  font-size: 0.625rem;
+  letter-spacing: 0.005em;
+  color: #fff;
+  border-radius: 2px;
+  width: 36px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  text-align: center;
+}
+
+.badge--long {
+  width: 53px;
+}
+
+.new {
+  background-color: #f7d3ad;
+}
+
+.popular {
+  background-color: #f7adad;
+}
+
+.re {
+  background-color: #adc1f7;
+}
+
+.discount {
+  background-color: #f69494;
+}
+
+.scheduled {
+  background-color: #cccccc;
+}
+
+.arrived {
+  background-color: #d2c1f1;
+}
