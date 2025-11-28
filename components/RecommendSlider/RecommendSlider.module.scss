@@ -1,0 +1,42 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.swiperBlock {
+  position: relative;
+  overflow: hidden;
+}
+
+.slider03 {
+  width: calc(100% - 100px);
+
+  @include mobile {
+    width: 100%;
+    overflow: visible;
+
+    :global(.swiper-slide) {
+      min-width: 108px;
+    }
+  }
+}
+
+:global(.swiper-button-prev),
+:global(.swiper-button-next) {
+  position: absolute;
+  top: calc((100% - 50px) * 0.5);
+  margin-top: -45px;
+  --swiper-navigation-color: #{$fontMainColor};
+  z-index: 10;
+  cursor: pointer;
+
+  @include mobile {
+    display: none;
+  }
+}
+
+:global(.swiper-button-prev) {
+  left: 0;
+}
+
+:global(.swiper-button-next) {
+  right: 0;
+}
