@@ -3,24 +3,13 @@
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation } from 'swiper/modules'
 import ProductCard from '@/components/ProductCard/ProductCard'
+import { ProductCardProps } from '@/types/Product'
 import 'swiper/css'
 import 'swiper/css/navigation'
 import styles from './RecommendSlider.module.scss'
 
-type Product = {
-  id: string
-  name: string
-  price: number
-  discountPrice?: number
-  image: string
-  badges?: Array<{
-    type: 'new' | 'popular' | 're' | 'discount' | 'scheduled' | 'arrived'
-    text: string
-  }>
-}
-
 type RecommendSliderProps = {
-  products: Product[]
+  products: ProductCardProps['product'][]
 }
 
 export default function RecommendSlider({ products }: RecommendSliderProps) {
