@@ -19,6 +19,10 @@ type MainVisualProps = {
 }
 
 export default function MainVisual({ slides }: MainVisualProps) {
+  const slidesPerView = 1
+  // ループモードが正しく機能するには、スライド数が slidesPerView * 2 以上必要
+  const shouldLoop = slides.length >= slidesPerView * 2
+
   return (
     <div className={styles.main_visual}>
       <div className={`${styles.main_visual_inner} content_width`}>
@@ -40,7 +44,7 @@ export default function MainVisual({ slides }: MainVisualProps) {
             delay: 5000,
             disableOnInteraction: false,
           }}
-          loop={true}
+          loop={shouldLoop}
           speed={1300}
           className={styles.slider01}
         >

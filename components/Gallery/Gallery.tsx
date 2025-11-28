@@ -19,6 +19,12 @@ type GalleryProps = {
 export default function Gallery({ images, alt = '商品画像' }: GalleryProps) {
   const [thumbsSwiper, setThumbsSwiper] = useState<SwiperType | null>(null)
 
+  const mainSlidesPerView = 1
+  const thumbsSlidesPerView = 9
+  // ループモードが正しく機能するには、スライド数が slidesPerView * 2 以上必要
+  const mainShouldLoop = images.length >= mainSlidesPerView * 2
+  const thumbsShouldLoop = images.length >= thumbsSlidesPerView * 2
+
   return (
     <div className={styles.gallery_wrapper}>
       <Swiper
@@ -28,7 +34,7 @@ export default function Gallery({ images, alt = '商品画像' }: GalleryProps) 
           nextEl: `.${styles.swiper_next}`,
           prevEl: `.${styles.swiper_prev}`,
         }}
-        loop={true}
+        loop={mainShouldLoop}
         effect="fade"
         className={styles.gallery}
       >
@@ -47,9 +53,9 @@ export default function Gallery({ images, alt = '商品画像' }: GalleryProps) 
       <Swiper
         modules={[Thumbs]}
         onSwiper={setThumbsSwiper}
-        slidesPerView={9}
+        slidesPerView={thumbsSlidesPerView}
         spaceBetween={10}
-        loop={true}
+        loop={thumbsShouldLoop}
         watchSlidesProgress={true}
         className={styles.choice_btn}
       >

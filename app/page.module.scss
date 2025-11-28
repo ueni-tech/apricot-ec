@@ -1,7 +1,7 @@
 @use '../styles/variables' as *;
 @use '../styles/mixins' as *;
 
-.toppage {
+:global(.toppage) {
   padding-bottom: 152px;
   padding-top: 53px;
 

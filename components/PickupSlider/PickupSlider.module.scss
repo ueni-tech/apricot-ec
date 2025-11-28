@@ -1,0 +1,30 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.swiper_block {
+  position: relative;
+
+  @include mobile {
+    display: none;
+  }
+}
+
+.slider02 {
+  width: calc(100% - 100px);
+  padding-bottom: 50px;
+}
+
+:global(.swiper-button-prev),
+:global(.swiper-button-next) {
+  top: calc((100% - 50px) * 0.5);
+  margin-top: -18px;
+  --swiper-navigation-color: #{$fontMainColor};
+}
+
+:global(.swiper-button-prev) {
+  left: 0;
+}
+
+:global(.swiper-button-next) {
+  right: 0;
+}

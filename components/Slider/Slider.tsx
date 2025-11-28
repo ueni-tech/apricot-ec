@@ -29,11 +29,15 @@ export default function Slider({
   autoplay = false,
   navigation = false,
 }: SliderProps) {
+  const slidesPerView = variant === 'pickup' ? 2 : variant === 'recommend' ? 5 : 1
+  // ループモードが正しく機能するには、スライド数が slidesPerView * 2 以上必要
+  const shouldLoop = slides.length >= slidesPerView * 2
+
   const swiperConfig = {
     modules: [Pagination, Navigation, Autoplay],
     spaceBetween: variant === 'pickup' ? 20 : 10,
-    slidesPerView: variant === 'pickup' ? 2 : variant === 'recommend' ? 5 : 1,
-    loop: true,
+    slidesPerView,
+    loop: shouldLoop,
     speed: variant === 'main' ? 1300 : 800,
     autoplay: autoplay ? { delay: 5000, disableOnInteraction: false } : false,
     pagination: variant === 'main' ? { clickable: true } : false,
