@@ -25,41 +25,6 @@
   }
 }
 
-// 新着コーデ
-.styling_card_body {
-  display: flex;
-  align-items: center;
-  margin-top: 5px;
-}
-
-.styling_card_face {
-  margin-right: 12px;
-
-  @include mobile {
-    margin-right: 4px;
-    width: clamp(25px, 3.75vw, 36px);
-  }
-}
-
-.styling_card_desc {
-  font-size: 0.75rem;
-  letter-spacing: 0.097em;
-
-  @include mobile {
-    font-size: clamp(0.625rem, 1.25vw, 0.75rem);
-  }
-}
-
-.new_styling_items_wrapper {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 57px;
-  justify-items: center;
-
-  @include mobile {
-    gap: 5px;
-  }
-}
 
 // 新着アイテム
 .new_items_items_wrapper {

@@ -90,8 +90,67 @@ button {
   }
 }
 
-.section_title_wapper {
+/* セクションタイトル */
+.sectionTitle_wapper {
   text-align: center;
+}
+
+.sectionTitle {
+  font-family: var(--fontEn);
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--section_titleColor);
+  letter-spacing: 0.097em;
+}
+
+.sectionSubtitle {
+  letter-spacing: 0.097em;
+}
+
+@include mobile {
+  /* セクションタイトル */
+  .sectionTitle {
+    font-size: var(--sp_sectionTtl_fontsize);
+  }
+
+  .sectionSubtitle {
+    font-size: var(--sp_sectionSubTtl_fontsize);
+  }
+}
+
+/* view more */
+.viewMore_btn {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 49px;
+  justify-content: flex-end;
+}
+
+.viewMore {
+  font-family: var(--fontEn);
+  font-weight: 500;
+}
+
+.viewMore_chevron {
+  width: 8px;
+  height: 14px;
+  margin-left: 15.3px;
+}
+
+@include mobile {
+  .viewMore_btn {
+    margin-top: clamp(37px, 7.3vw, 70px);
+  }
+
+  .viewMore {
+    padding-bottom: 0;
+    font-size: clamp(0.625rem, 1.66vw, 1rem);
+  }
+
+  .viewMore_chevron {
+    width: clamp(5.7px, 0.83vw, 8px);
+    margin-left: 15.3px;
+  }
 }
 
 // コンテンツブロック（ContentBlockコンポーネントで管理）

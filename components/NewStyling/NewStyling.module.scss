@@ -1,0 +1,47 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+/* 新着コーデ
+----------------------------------------------------- */
+.stylingCard {
+  width: 100%;
+}
+
+.stylingCard_body {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.stylingCard_face {
+  margin-right: 12px;
+  width: 18%;
+}
+
+.stylingCard_desc {
+  font-size: 0.75rem;
+  letter-spacing: 0.097em;
+}
+
+.newStyling_itemsWrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 57px;
+  justify-items: center;
+}
+
+@include mobile {
+  /* 新着コーデ */
+  .newStyling_itemsWrapper {
+    gap: 5px;
+  }
+
+  .stylingCard_face {
+    margin-right: 4px;
+    width: clamp(25px, 3.75vw, 36px);
+  }
+
+  .stylingCard_desc {
+    font-size: clamp(0.625rem, 1.25vw, 0.75rem);
+  }
+}

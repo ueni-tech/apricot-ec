@@ -3,6 +3,8 @@ import Info from '@/components/Info/Info'
 import styles from './page.module.scss'
 import PickupSlider from '@/components/PickupSlider/PickupSlider'
 import ContentBlock from "@/components/ContentBlock/ContentBlock"
+import NewStyling from "@/components/NewStyling/NewStyling"
+import NewItems from "@/components/NewItems/NewItems"
 
 const mainVisualSlides = [
   {
@@ -51,7 +53,8 @@ export default function Home() {
       <MainVisual slides={mainVisualSlides} />
       <Info />
       <ContentBlock>
-        <p>hello</p>
+        <NewStyling />
+        <NewItems />
         <div className="content_block_content">
           <PickupSlider slides={pickupSlides} />
         </div>

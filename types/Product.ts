@@ -55,7 +55,7 @@ export type ProductCardProps = {
     name: string
     price: number
     discountPrice?: number | null
-    image: string
+    thumbnail: string
     badges?: Badge[]
   }
 }
