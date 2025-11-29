@@ -5,7 +5,7 @@
 :root {
   --mainColor: #{$mainColor};
   --fontMainColor: #{$fontMainColor};
-  --sectionTitleColor: #{$sectionTitleColor};
+  --section_titleColor: #{$section_titleColor};
   --sp_sectionTtl_fontsize: #{$spSectionTtlFontsize};
   --sp_sectionSubTtl_fontsize: #{$spSectionSubTtlFontsize};
 }
@@ -73,7 +73,33 @@ button {
   @include content-width;
 }
 
+.content_block_content {
+  max-width: 980px;
+
+  @include tablet {
+    max-width: unset;
+    margin: 0 auto;
+  }
+
+  &:not(:first-child) {
+    margin-top: 129px;
+
+    @include mobile {
+      margin-top: 100px;
+    }
+  }
+}
+
+.section_title_wapper {
+  text-align: center;
+}
+
 // コンテンツブロック（ContentBlockコンポーネントで管理）
+
+.toppage {
+  padding-bottom: 152px;
+  padding-top: 53px;
+}
 
 .items_wrapper {
   margin-top: 65px;

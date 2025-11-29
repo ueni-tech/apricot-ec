@@ -27,20 +27,3 @@
   margin: 0 auto;
   flex-grow: 1;
 }
-
-.content_block_content {
-  max-width: 980px;
-
-  @include tablet {
-    max-width: unset;
-    margin: 0 auto;
-  }
-
-  &:not(:first-child) {
-    margin-top: 129px;
-
-    @include mobile {
-      margin-top: 100px;
-    }
-  }
-}

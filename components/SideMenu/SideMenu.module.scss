@@ -15,9 +15,9 @@
   font-size: 0.875rem;
   font-weight: 700;
   letter-spacing: 0.09em;
-  color: $sectionTitleColor;
+  color: $section_titleColor;
   padding-bottom: 3.3px;
-  border-bottom: 2px solid $sectionTitleColor;
+  border-bottom: 2px solid $section_titleColor;
   margin-bottom: 18.5px;
 
   &:not(:first-child) {

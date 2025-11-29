@@ -4,16 +4,12 @@ import { useState } from 'react'
 import styles from './CategoryNav.module.scss'
 import Image from 'next/image'
 import Link from 'next/link'
-
-type CategoryItem = {
-  label: string
-  href: string
-  subItems?: CategoryItem[]
-}
+import type { Category } from '@/types/Category'
+import type { ProductType } from '@/types/ProductType'
 
 type CategoryNavProps = {
-  productTypes: CategoryItem[]
-  categories: CategoryItem[]
+  productTypes: ProductType[]
+  categories: Category[]
 }
 
 export default function CategoryNav({ productTypes, categories }: CategoryNavProps) {
@@ -52,7 +48,7 @@ export default function CategoryNav({ productTypes, categories }: CategoryNavPro
             <Link
               href={category.href}
               className={styles.side_menu_link}
-              onClick={() => category.subItems && toggleCattegory(index)}
+              onClick={() => category.subCategories && toggleCattegory(index)}
             >
               <span>{category.label}</span>
               <Image
@@ -63,9 +59,9 @@ export default function CategoryNav({ productTypes, categories }: CategoryNavPro
                 className={styles.side_menu_chevron}
               />
             </Link>
-            {category.subItems && (
+            {category.subCategories && (
               <ul className={`${styles.sub_menu} ${openCategories[index] ? styles.open : ''}`}>
-                {category.subItems.map((subItem, subIndex) => (
+                {category.subCategories.map((subItem, subIndex) => (
                   <li key={subIndex} className={styles.sub_menu_item}>
                     <Link href={subItem.href} className={styles.sub_menu_link}>
                       {subItem.label}

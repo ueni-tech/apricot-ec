@@ -16,11 +16,15 @@
   font-family: var(--fontEN);
   font-size: 2.25rem;
   letter-spacing: 0.09em;
-  color: $sectionTitleColor;
+  color: $section_titleColor;
 
   @include mobile {
     font-size: var(--sp_sectionTtl_fontsize);
   }
+}
+
+.section_title_wapper {
+  // セクションタイトルのラッパー
 }
 
 .info_subtitle {
@@ -48,6 +52,10 @@
   align-items: center;
   padding-top: 13.5px;
   padding-bottom: 13.5px;
+}
+
+.info_body {
+  // 情報アイテムの本文部分
 }
 
 .info_list_item {

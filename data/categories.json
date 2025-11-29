@@ -1,0 +1,109 @@
+[
+  {
+    "id": "tops",
+    "label": "トップス",
+    "href": "/search?category=tops",
+    "subCategories": [
+      { "id": "all", "label": "すべて", "href": "/search?category=tops" },
+      { "id": "knit", "label": "ニット", "href": "/search?category=tops&subCategory=knit" },
+      { "id": "shirt", "label": "シャツ・ブラウス", "href": "/search?category=tops&subCategory=shirt" },
+      { "id": "cutsew", "label": "カットソー", "href": "/search?category=tops&subCategory=cutsew" },
+      { "id": "sweat", "label": "スウェット", "href": "/search?category=tops&subCategory=sweat" },
+      { "id": "tshirt", "label": "Tシャツ", "href": "/search?category=tops&subCategory=tshirt" },
+      { "id": "hoodie", "label": "パーカー", "href": "/search?category=tops&subCategory=hoodie" },
+      { "id": "tank", "label": "タンクトップ・キャミソール", "href": "/search?category=tops&subCategory=tank" }
+    ]
+  },
+  {
+    "id": "outer",
+    "label": "アウター",
+    "href": "/search?category=outer",
+    "subCategories": [
+      { "id": "all", "label": "すべて", "href": "/search?category=outer" },
+      { "id": "jacket", "label": "ジャケット", "href": "/search?category=outer&subCategory=jacket" },
+      { "id": "cardigan", "label": "カーディガン", "href": "/search?category=outer&subCategory=cardigan" },
+      { "id": "coat", "label": "コート", "href": "/search?category=outer&subCategory=coat" },
+      { "id": "set", "label": "セットアップ", "href": "/search?category=outer&subCategory=set" },
+      { "id": "other", "label": "その他", "href": "/search?category=outer&subCategory=other" }
+    ]
+  },
+  {
+    "id": "onepiece",
+    "label": "ワンピース",
+    "href": "/search?category=onepiece",
+    "subCategories": [
+      { "id": "all", "label": "すべて", "href": "/search?category=onepiece" },
+      { "id": "pattern", "label": "柄", "href": "/search?category=onepiece&subCategory=pattern" },
+      { "id": "solid", "label": "無地", "href": "/search?category=onepiece&subCategory=solid" },
+      { "id": "knit", "label": "ニットワンピース", "href": "/search?category=onepiece&subCategory=knit" },
+      { "id": "long", "label": "ロングワンピース", "href": "/search?category=onepiece&subCategory=long" },
+      { "id": "shirt", "label": "シャツワンピース", "href": "/search?category=onepiece&subCategory=shirt" },
+      { "id": "camisole", "label": "キャミソールワンピース", "href": "/search?category=onepiece&subCategory=camisole" },
+      { "id": "allinone", "label": "オールインワン・サロペット", "href": "/search?category=onepiece&subCategory=allinone" },
+      { "id": "jumper", "label": "ジャンパースカート", "href": "/search?category=onepiece&subCategory=jumper" },
+      { "id": "other", "label": "その他", "href": "/search?category=onepiece&subCategory=other" }
+    ]
+  },
+  {
+    "id": "bottoms",
+    "label": "ボトムス",
+    "href": "/search?category=bottoms",
+    "subCategories": [
+      { "id": "all", "label": "すべて", "href": "/search?category=bottoms" },
+      { "id": "pants", "label": "パンツ・デニム", "href": "/search?category=bottoms&subCategory=pants" },
+      { "id": "shorts", "label": "ショートパンツ", "href": "/search?category=bottoms&subCategory=shorts" },
+      { "id": "skirt", "label": "スカート", "href": "/search?category=bottoms&subCategory=skirt" },
+      { "id": "set", "label": "セットアップ", "href": "/search?category=bottoms&subCategory=set" },
+      { "id": "other", "label": "その他", "href": "/search?category=bottoms&subCategory=other" }
+    ]
+  },
+  {
+    "id": "shoes",
+    "label": "シューズ",
+    "href": "/search?category=shoes",
+    "subCategories": [
+      { "id": "all", "label": "すべて", "href": "/search?category=shoes" },
+      { "id": "pumps", "label": "パンプス", "href": "/search?category=shoes&subCategory=pumps" },
+      { "id": "sandals", "label": "サンダル", "href": "/search?category=shoes&subCategory=sandals" },
+      { "id": "shortboots", "label": "ショートブーツ・ブーティ", "href": "/search?category=shoes&subCategory=shortboots" },
+      { "id": "longboots", "label": "ロングブーツ", "href": "/search?category=shoes&subCategory=longboots" },
+      { "id": "sneakers", "label": "スニーカー", "href": "/search?category=shoes&subCategory=sneakers" },
+      { "id": "other", "label": "その他", "href": "/search?category=shoes&subCategory=other" }
+    ]
+  },
+  {
+    "id": "bags",
+    "label": "バッグ・カバン",
+    "href": "/search?category=bags",
+    "subCategories": [
+      { "id": "all", "label": "すべて", "href": "/search?category=bags" },
+      { "id": "shoulder", "label": "ショルダーバッグ", "href": "/search?category=bags&subCategory=shoulder" },
+      { "id": "handbag", "label": "ハンドバッグ", "href": "/search?category=bags&subCategory=handbag" },
+      { "id": "backpack", "label": "リュック", "href": "/search?category=bags&subCategory=backpack" },
+      { "id": "tote", "label": "トートバッグ", "href": "/search?category=bags&subCategory=tote" },
+      { "id": "clutch", "label": "クラッチバッグ", "href": "/search?category=bags&subCategory=clutch" },
+      { "id": "other", "label": "その他", "href": "/search?category=bags&subCategory=other" }
+    ]
+  },
+  {
+    "id": "accessories",
+    "label": "アクセサリー",
+    "href": "/search?category=accessories",
+    "subCategories": [
+      { "id": "all", "label": "すべて", "href": "/search?category=accessories" },
+      { "id": "piercing", "label": "ピアス・リング", "href": "/search?category=accessories&subCategory=piercing" },
+      { "id": "necklace", "label": "ネックレス", "href": "/search?category=accessories&subCategory=necklace" },
+      { "id": "belt", "label": "ベルト", "href": "/search?category=accessories&subCategory=belt" },
+      { "id": "bracelet", "label": "ブレス", "href": "/search?category=accessories&subCategory=bracelet" },
+      { "id": "hat", "label": "帽子", "href": "/search?category=accessories&subCategory=hat" },
+      { "id": "head", "label": "ヘッドアクセ", "href": "/search?category=accessories&subCategory=head" },
+      { "id": "scarf", "label": "スカーフ", "href": "/search?category=accessories&subCategory=scarf" },
+      { "id": "stole", "label": "ストール・マフラー", "href": "/search?category=accessories&subCategory=stole" },
+      { "id": "legwear", "label": "レッグウェア", "href": "/search?category=accessories&subCategory=legwear" },
+      { "id": "inner", "label": "インナー", "href": "/search?category=accessories&subCategory=inner" },
+      { "id": "glasses", "label": "メガネ・サングラス", "href": "/search?category=accessories&subCategory=glasses" },
+      { "id": "watch", "label": "時計", "href": "/search?category=accessories&subCategory=watch" },
+      { "id": "other", "label": "その他", "href": "/search?category=accessories&subCategory=other" }
+    ]
+  }
+]

@@ -4,7 +4,7 @@
 .searchpage_title {
   font-size: 1.625rem;
   letter-spacing: 0.08em;
-  color: $sectionTitleColor;
+  color: $section_titleColor;
 
   @include mobile {
     font-size: clamp(1rem, 2.71vw, 1.625rem);

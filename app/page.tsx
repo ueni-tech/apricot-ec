@@ -1,8 +1,8 @@
 import MainVisual from '@/components/MainVisual/MainVisual'
 import Info from '@/components/Info/Info'
-import ContentBlock from '@/components/ContentBlock/ContentBlock'
 import styles from './page.module.scss'
 import PickupSlider from '@/components/PickupSlider/PickupSlider'
+import ContentBlock from "@/components/ContentBlock/ContentBlock"
 
 const mainVisualSlides = [
   {
@@ -17,7 +17,7 @@ const mainVisualSlides = [
   },
   {
     image: '/img/top/mv_dress.jpg',
-    alt: 'ドレス　コレクション',
+    alt: 'ドレス コレクション',
     href: '#',
   },
 ]
@@ -51,8 +51,11 @@ export default function Home() {
       <MainVisual slides={mainVisualSlides} />
       <Info />
       <ContentBlock>
-        <PickupSlider slides={pickupSlides} />
-      </ContentBlock>
-    </div>
+        <p>hello</p>
+        <div className="content_block_content">
+          <PickupSlider slides={pickupSlides} />
+        </div>
+      </ContentBlock >
+    </div >
   )
 }

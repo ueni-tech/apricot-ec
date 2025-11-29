@@ -2,9 +2,6 @@
 @use '../styles/mixins' as *;
 
 :global(.toppage) {
-  padding-bottom: 152px;
-  padding-top: 53px;
-
   @include tablet {
     padding-top: 68px;
   }
@@ -16,6 +13,12 @@
 
   .badge,
   .searchpage .badge {
+    @include mobile {
+      display: none;
+    }
+  }
+
+  .swiper_block {
     @include mobile {
       display: none;
     }
@@ -127,13 +130,5 @@
     gap: 20px;
     max-width: 700px;
     margin: 20px auto 0;
-  }
-}
-
-.toppage {
-  .swiper_block {
-    @include mobile {
-      display: none;
-    }
   }
 }

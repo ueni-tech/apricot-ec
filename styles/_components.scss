@@ -1,15 +1,15 @@
 @use 'variables' as *;
 @use 'mixins' as *;
 
-.sectionTitleWrapper {
+.section_titleWrapper {
   text-align: center;
 }
 
-.sectionTitle {
+.section_title {
   font-family: var(--fontEN);
   font-size: 1.75rem;
   font-weight: 700;
-  color: var(--sectionTitleColor);
+  color: var(--section_titleColor);
   letter-spacing: 0.097em;
 
   @include mobile {
