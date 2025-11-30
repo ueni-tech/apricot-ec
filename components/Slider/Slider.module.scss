@@ -1,0 +1,75 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.swiper_block {
+  position: relative;
+
+  :global(.swiper-button-prev),
+  :global(.swiper-button-next) {
+    top: calc((100% - 50px) * 0.5);
+    margin-top: -18px;
+    --swiper-navigation-color: #{$fontMainColor};
+  }
+
+  :global(.swiper-button-prev) {
+    left: 0;
+  }
+
+  :global(.swiper-button-next) {
+    right: 0;
+  }
+}
+
+.slider {
+  height: auto;
+}
+
+// バリアント別のスタイル
+.main {
+  :global(.swiper-pagination-bullet) {
+    height: 15px;
+    width: 15px;
+
+    @include mobile {
+      height: clamp(5px, 1.56vw, 15px);
+      width: clamp(5px, 1.56vw, 15px);
+    }
+  }
+
+  :global(.swiper-pagination-bullet-active) {
+    background-color: $white;
+  }
+}
+
+.pickup {
+  .slider {
+    width: calc(100% - 100px);
+    padding-bottom: 50px;
+  }
+}
+
+.recommend {
+  .slider {
+    width: calc(100% - 100px);
+
+    @include mobile {
+      width: 88%;
+    }
+  }
+}
+
+// itempage用のスライダー
+.itempage {
+  :global(.swiper-button-prev),
+  :global(.swiper-button-next) {
+    margin-top: -45px;
+  }
+}
+
+// searchpage用のスライダー
+.searchpage {
+  :global(.swiper-button-prev),
+  :global(.swiper-button-next) {
+    margin-top: -48px;
+  }
+}

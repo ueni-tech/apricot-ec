@@ -1,0 +1,49 @@
+@use '../../styles/variables' as *;
+
+.badge {
+  display: inline-block;
+  font-size: 0.625rem;
+  letter-spacing: 0.005em;
+  color: $white;
+  border-radius: 2px;
+  padding: 3px 5px;
+  text-align: center;
+
+  &.long {
+    width: 53px;
+  }
+
+  &.new {
+    background-color: #f7d3ad;
+  }
+
+  &.popular {
+    background-color: #f7adad;
+  }
+
+  &.re {
+    background-color: #adc1f7;
+  }
+
+  &.discount {
+    background-color: #f69494;
+  }
+
+  &.scheduled {
+    background-color: #cccccc;
+  }
+
+  &.arrived {
+    background-color: #d2c1f1;
+  }
+}
+
+.badge_text {
+  margin: 0;
+}
+
+:global(.item_detail) {
+  .badge {
+    margin-right: 12px;
+  }
+}

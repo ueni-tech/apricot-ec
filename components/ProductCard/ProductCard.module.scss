@@ -1,0 +1,69 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.item_card_link {
+  display: block;
+}
+
+.item_card {
+  max-width: 188px;
+
+  @include mobile {
+    .item_card_name,
+    .item_card_price,
+    .item_card_dis_price {
+      @include responsive-font(0.625rem, 0.75rem);
+      @include text-ellipsis(2);
+    }
+
+    .item_card_price {
+      margin-top: 0;
+    }
+
+    .item_card_dis_price {
+      margin-top: 0;
+    }
+  }
+}
+
+.searchpage {
+  .item_card {
+    max-width: 232px;
+  }
+}
+
+.item_card_img {
+  display: block;
+  width: 100%;
+}
+
+.item_card_name {
+  margin-top: 3px;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+}
+
+.item_card_price {
+  margin-top: 5px;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+}
+
+.item_card_dis_price {
+  margin-top: 3px;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  color: #f53838;
+}
+
+.item_card_badges_wrapper {
+  display: flex;
+  gap: 5px;
+  margin-top: 5px;
+}
+
+@include mobile {
+  .item_card_badges_wrapper {
+    display: none;
+  }
+}

@@ -1,0 +1,290 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.header {
+  background-color: var(--mainColor);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 998;
+}
+
+.header_inner {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  padding: 13px 27px 13px 0;
+
+  @include tablet {
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 20px 13px;
+  }
+
+  @include mobile {
+    height: 60px;
+    padding: 0 15px;
+  }
+}
+
+.humb_btn {
+  display: none;
+  font-size: 2.5rem;
+  color: var(--fontMainColor);
+  position: relative;
+  z-index: 999;
+
+  @include tablet {
+    display: block;
+  }
+
+  @include mobile {
+    font-size: 1.7rem;
+  }
+}
+
+.header_body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  @include tablet {
+    text-align: center;
+  }
+
+  @include mobile {
+    top: 55%;
+  }
+}
+
+.site_title {
+  display: inline;
+  font-size: 2.3125rem;
+  font-family: var(--fontEN);
+  letter-spacing: 0.097em;
+
+  @include tablet {
+    display: block;
+    font-size: 1.7rem;
+  }
+
+  @include mobile {
+    font-size: 1.2rem;
+    line-height: 0.5;
+  }
+}
+
+.site_subtitle {
+  margin-left: 39px;
+  font-family: var(--fontDamion);
+  font-size: 1.625rem;
+  letter-spacing: 0.09em;
+
+  @include tablet {
+    margin-left: 0;
+    font-size: 1rem;
+  }
+
+  @include mobile {
+    font-size: 0.8rem;
+  }
+}
+
+.header_list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  @include mobile {
+    gap: 15px;
+  }
+}
+
+.search_bar_wrapper {
+  border-bottom: 1px solid $fontMainColor;
+}
+
+.search_bar_wrapper_pc {
+  @include mobile {
+    display: none;
+  }
+}
+
+.search_bar_wrapper_sp {
+  display: none;
+  border-bottom: none;
+  position: relative;
+
+  @include mobile {
+    display: block;
+  }
+}
+
+.search_bar_input {
+  width: 157px;
+  padding-bottom: 3.6px;
+
+  &::placeholder {
+    color: var(--fontMainColor);
+    font-family: var(--fontEN);
+    font-size: 0.875rem;
+    letter-spacing: 0.097em;
+
+    @include mobile {
+      font-size: 0.75rem;
+    }
+  }
+
+  @include mobile {
+    display: none;
+    position: absolute;
+    right: -5px;
+    top: 30px;
+    background-color: $white;
+    padding: 3px 10px;
+    border: 1px solid $fontMainColor;
+    z-index: 999;
+
+    &.active {
+      display: block;
+    }
+  }
+}
+
+.search_bar_btn {
+  width: 14px;
+  height: 14px;
+  background-image: url('/img/top/magnifying-glass-solid.png');
+
+  @include mobile {
+    width: auto;
+    height: auto;
+    background-image: none;
+  }
+}
+
+.humb_menu {
+  display: none;
+  position: fixed;
+  z-index: 997;
+  background-color: $white;
+  left: 0;
+  right: 0;
+  height: 100%;
+  overflow: auto;
+  padding-bottom: 90px;
+
+  &.open {
+    display: block;
+  }
+}
+
+.humb_menu_title {
+  font-size: clamp(0.625rem, 2.26vw, 1rem);
+  font-weight: 700;
+  letter-spacing: 0.097em;
+  padding: 13px 20px;
+  border-bottom: 1px solid $fontMainColor;
+  color: $section_titleColor;
+}
+
+.humb_menu_list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.humb_menu_item {
+  font-size: clamp(0.625rem, 2.26vw, 0.875rem);
+  letter-spacing: 0.097em;
+  border-bottom: 1px dotted $fontMainColor;
+
+  &:last-child {
+    border-bottom: 1px solid $fontMainColor;
+  }
+}
+
+.humb_menu_link,
+.humb_menu_btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  width: 100%;
+  background: none;
+  border: none;
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  letter-spacing: inherit;
+  cursor: pointer;
+  text-align: left;
+}
+
+.humb_menu_btn {
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.humb_menu_chevron {
+  width: 7px;
+  height: 13px;
+  transition: transform 0.3s ease;
+}
+
+.active {
+  > .humb_menu_chevron {
+    transform: rotate(180deg);
+  }
+}
+
+.humb_sub_menu {
+  display: none;
+  background-color: $mainColor;
+  font-size: 0.875rem;
+
+  &.open {
+    display: block;
+  }
+}
+
+.humb_sub_menu_item {
+  &:not(:last-child) {
+    border-bottom: 1px solid $white;
+  }
+}
+
+.humb_sub_menu_link {
+  display: block;
+  padding: 10px 20px;
+}
+
+.user_icon_wrapper {
+  margin-left: 28.5px;
+  width: 20px;
+
+  @include mobile {
+    margin-left: 0;
+  }
+}
+
+.shopping_cart_icon_wrapper {
+  margin-left: 20.1px;
+  width: 20px;
+
+  @include mobile {
+    margin-left: 0;
+  }
+}
+
+.header_list_item {
+  img {
+    @include mobile {
+      height: 20px;
+      width: auto;
+    }
+  }
+}

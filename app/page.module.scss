@@ -1,4 +1,99 @@
-.toppage {
-  padding-bottom: 152px;
-  padding-top: 53px;
+@use '../styles/variables' as *;
+@use '../styles/mixins' as *;
+
+:global(.toppage) {
+  @include tablet {
+    padding-top: 68px;
+  }
+
+  @include mobile {
+    padding-top: 60px;
+    padding-bottom: 124px;
+  }
+
+  .badge,
+  .searchpage .badge {
+    @include mobile {
+      display: none;
+    }
+  }
+
+  .swiper_block {
+    @include mobile {
+      display: none;
+    }
+  }
+}
+
+
+// 新着アイテム
+.new_items_items_wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+
+  @include mobile {
+    gap: 5px;
+  }
+}
+
+// アイテムランキング
+.item_ranking_items_wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  align-items: baseline;
+
+  @include mobile {
+    gap: 5px;
+  }
+}
+
+.item_ranking_item {
+  display: flex;
+  flex-direction: column;
+  max-width: 188px;
+}
+
+.ranking_icon {
+  align-self: center;
+  padding-bottom: 5px;
+
+  @include mobile {
+    width: 32%;
+    padding-bottom: 0;
+  }
+
+  &.circle {
+    padding-bottom: 11px;
+
+    @include mobile {
+      width: 16%;
+      padding-bottom: 0.53vw;
+    }
+  }
+}
+
+// 再入荷アイテム
+.restock_items_wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+
+  @include mobile {
+    gap: 5px;
+  }
+}
+
+// 特集
+.pick_up_wrapper {
+  display: none;
+
+  @include mobile {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 700px;
+    margin: 20px auto 0;
+  }
 }

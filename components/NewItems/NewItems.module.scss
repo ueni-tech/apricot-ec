@@ -1,0 +1,18 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+/* 新着アイテム
+----------------------------------------------------- */
+.newItems_itemsWrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+
+@include mobile {
+  /* 新着アイテム */
+  .newItems_itemsWrapper {
+    gap: 5px;
+  }
+}
+

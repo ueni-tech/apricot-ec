@@ -1,0 +1,18 @@
+// カラー
+$mainColor: #e9e9e9;
+$fontMainColor: #707070;
+$section_titleColor: #333;
+$white: #fff;
+$black: #000;
+
+// フォントサイズ
+$spSectionTtlFontsize: clamp(0.875rem, 3.33vw, 2rem);
+$spSectionSubTtlFontsize: clamp(0.625rem, 1.668vw, 1rem);
+
+// ブレークポイント
+$breakpointTablet: 1400px;
+$breakpointMobile: 960px;
+
+// スペーシング
+$contentWidth: 1400px;
+$contentPadding: 75px;

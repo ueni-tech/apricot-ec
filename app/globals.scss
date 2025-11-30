@@ -1,30 +1,35 @@
-@charset "utf-8";
+@use '../styles/variables' as *;
+@use '../styles/mixins' as *;
+@import url('https://unpkg.com/ress/dist/ress.min.css');
+@import '../styles/components';
 
-/* ベース
------------------------------------------------------ */
 :root {
-  --mainColor: #e9e9e9;
-  --fontMainColor: #707070;
-  --sectionTitleColor: #333;
-  --sp_sectionTtl_fontsize: clamp(0.875rem, 3.33vw, 2rem);
-  --sp_sectionSubTtl_fontsize: clamp(0.625rem, 1.668vw, 1rem);
+  --mainColor: #{$mainColor};
+  --fontMainColor: #{$fontMainColor};
+  --section_titleColor: #{$section_titleColor};
+  --sp_sectionTtl_fontsize: #{$spSectionTtlFontsize};
+  --sp_sectionSubTtl_fontsize: #{$spSectionSubTtlFontsize};
 }
 
-/* リセットCSS*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+html.open {
+  overflow: hidden;
+}
+
 body {
   color: var(--fontMainColor);
   font-size: 100%;
-  font-family: var(--font-jp), var(--font-en), sans-serif;
+  font-family: var(--fontJP), var(--fontEN), sans-serif;
   font-weight: 400;
 }
 
 img {
+  width: 100%;
   max-width: 100%;
   height: auto;
   object-fit: cover;
@@ -32,7 +37,7 @@ img {
 }
 
 a {
-  color: inherit;
+  color: var(--fontMainColor);
   text-decoration: none;
 
   &:hover {
@@ -42,6 +47,11 @@ a {
 
 ul {
   list-style: none;
+}
+
+select {
+  -moz-appearance: auto;
+  -webkit-appearance: auto;
 }
 
 h1,
@@ -59,9 +69,106 @@ button {
   line-height: 1;
 }
 
-/* レイアウト
------------------------------------------------------ */
-.contentWidth {
-  max-width: 1400px;
-  margin: 0 auto;
+// レイアウトユーティリティ
+.content_width {
+  @include content-width;
+}
+
+.content_block_content {
+  max-width: 980px;
+
+  @include tablet {
+    max-width: unset;
+    margin: 0 auto;
+  }
+
+  &:not(:first-child) {
+    margin-top: 129px;
+
+    @include mobile {
+      margin-top: 100px;
+    }
+  }
+}
+
+/* セクションタイトル */
+.sectionTitle_wapper {
+  text-align: center;
+}
+
+.sectionTitle {
+  font-family: var(--fontEn);
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--section_titleColor);
+  letter-spacing: 0.097em;
+}
+
+.sectionSubtitle {
+  letter-spacing: 0.097em;
+}
+
+@include mobile {
+  /* セクションタイトル */
+  .sectionTitle {
+    font-size: var(--sp_sectionTtl_fontsize);
+  }
+
+  .sectionSubtitle {
+    font-size: var(--sp_sectionSubTtl_fontsize);
+  }
+}
+
+/* view more */
+.viewMore_btn {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 49px;
+  justify-content: flex-end;
+}
+
+.viewMore {
+  font-family: var(--fontEn);
+  font-weight: 500;
+}
+
+.viewMore_chevron {
+  width: 8px;
+  height: 14px;
+  margin-left: 15.3px;
+}
+
+@include mobile {
+  .viewMore_btn {
+    margin-top: clamp(37px, 7.3vw, 70px);
+  }
+
+  .viewMore {
+    padding-bottom: 0;
+    font-size: clamp(0.625rem, 1.66vw, 1rem);
+  }
+
+  .viewMore_chevron {
+    width: clamp(5.7px, 0.83vw, 8px);
+    margin-left: 15.3px;
+  }
+}
+
+// コンテンツブロック（ContentBlockコンポーネントで管理）
+
+.toppage {
+  padding-bottom: 152px;
+  padding-top: 53px;
+}
+
+.items_wrapper {
+  margin-top: 65px;
+
+  @include mobile {
+    margin-top: 20px;
+  }
+}
+
+.item_ranking_items_wrapper.items_wrapper {
+  margin-top: 30px;
 }

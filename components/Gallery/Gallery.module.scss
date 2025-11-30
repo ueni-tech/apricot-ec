@@ -1,0 +1,67 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.gallery_wrapper {
+  margin-bottom: 21px;
+  position: relative;
+}
+
+.gallery {
+  margin-bottom: 21px;
+}
+
+.choice_btn {
+  :global(.swiper-wrapper) {
+    display: flex;
+    flex-wrap: wrap;
+    transform: none !important;
+    // gap: 10px;
+  }
+
+  :global(.swiper-slide) {
+    cursor: pointer;
+    outline: none;
+    background: #333;
+    width: calc(20%) !important;
+    margin: 0 !important;
+    list-style: none;
+    flex-shrink: 0;
+
+    img {
+      opacity: 0.4;
+      transition: opacity 0.3s;
+    }
+
+    &:global(.swiper-slide-thumb-active img) {
+      opacity: 1;
+    }
+
+    &:hover img {
+      opacity: 0.7;
+    }
+  }
+}
+
+.swiper_prev,
+.swiper_next {
+  position: absolute;
+  z-index: 3;
+  top: 42%;
+  cursor: pointer;
+  outline: none;
+  border-top: 2px solid #ccc;
+  border-right: 2px solid #ccc;
+  height: 25px;
+  width: 25px;
+  user-select: none;
+}
+
+.swiper_prev {
+  left: 2.5%;
+  transform: rotate(-135deg);
+}
+
+.swiper_next {
+  right: 2.5%;
+  transform: rotate(45deg);
+}

@@ -1,0 +1,23 @@
+[
+  {
+    "id": "new-coord",
+    "label": "新着コーデ",
+    "href": "/search?sort=new"
+  },
+  {
+    "id": "new-item",
+    "label": "新着アイテム",
+    "href": "/search?sort=new"
+  },
+  {
+    "id": "ranking",
+    "label": "アイテムランキング",
+    "href": "/search?sort=popular"
+  },
+  {
+    "id": "restock",
+    "label": "再入荷アイテム",
+    "href": "/search?restock=true"
+  }
+]
+

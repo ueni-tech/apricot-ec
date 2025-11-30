@@ -1,0 +1,46 @@
+@use 'variables' as *;
+
+// メディアクエリ用mixin
+@mixin tablet {
+  @media screen and (max-width: $breakpointTablet) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media screen and (max-width: $breakpointMobile) {
+    @content;
+  }
+}
+
+// フォントサイズのclamp用mixin
+@mixin responsive-font($min, $max) {
+  font-size: clamp(#{$min}, calc((#{$max} - #{$min}) / 100 * 1vw), #{$max});
+}
+
+// コンテンツ幅の中央揃え
+@mixin content-width {
+  max-width: $contentWidth;
+  margin: 0 auto;
+}
+
+// フレックスボックス中央揃え
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// テキスト省略
+@mixin text-ellipsis($lines: 1) {
+  @if $lines == 1 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  } @else {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $lines;
+    overflow: hidden;
+  }
+}
