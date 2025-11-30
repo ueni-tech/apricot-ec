@@ -22,7 +22,7 @@ export default function Header() {
           <i className="fa-solid fa-bars"></i>
         </button>
         <div className={styles.header_body}>
-          <Link href="/" className={styles.header_link}>
+          <Link href="#" className={styles.header_link}>
             <h1 className={styles.site_title}>APRICOT</h1>
             <span className={styles.site_subtitle}>Elegance & Mignonne</span>
           </Link>

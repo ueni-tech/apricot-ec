@@ -28,7 +28,7 @@ export default function CategoryNav({ productTypes, categories }: CategoryNavPro
       <ul className={styles.side_menu_list}>
         {productTypes.map((item, index) => (
           <li key={index} className={styles.side_menu_item}>
-            <Link href={item.href} className={styles.side_menu_link}>
+            <Link href="#" className={styles.side_menu_link}>
               <span>{item.label}</span>
               <Image
                 src="/img/top/chevron-right-solid.png"
@@ -46,7 +46,7 @@ export default function CategoryNav({ productTypes, categories }: CategoryNavPro
         {categories.map((category, index) => (
           <li key={index} className={`${styles.side_menu_item} ${styles.has_sub}`}>
             <Link
-              href={category.href}
+              href="#"
               className={styles.side_menu_link}
               onClick={() => category.subCategories && toggleCattegory(index)}
             >
@@ -63,7 +63,7 @@ export default function CategoryNav({ productTypes, categories }: CategoryNavPro
               <ul className={`${styles.sub_menu} ${openCategories[index] ? styles.open : ''}`}>
                 {category.subCategories.map((subItem, subIndex) => (
                   <li key={subIndex} className={styles.sub_menu_item}>
-                    <Link href={subItem.href} className={styles.sub_menu_link}>
+                    <Link href="#" className={styles.sub_menu_link}>
                       {subItem.label}
                     </Link>
                   </li>

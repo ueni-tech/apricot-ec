@@ -16,7 +16,6 @@ export function getNewProducts(limit?: number): Product[] {
   const newProducts = getAllProducts()
     .filter((product) => product.isNew)
     .sort((a, b) => {
-      // ソートロジック（例: IDの降順）
       return parseInt(b.id) - parseInt(a.id)
     })
 
@@ -28,7 +27,6 @@ export function getPopularProducts(limit?: number): Product[] {
   const popularProducts = getAllProducts()
     .filter((product) => product.isPopular)
     .sort((a, b) => {
-      // ソートロジック（例: 価格の昇順）
       return a.price - b.price
     })
 
