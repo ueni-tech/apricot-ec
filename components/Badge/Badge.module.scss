@@ -41,3 +41,9 @@
 .badge_text {
   margin: 0;
 }
+
+:global(.item_detail) {
+  .badge {
+    margin-right: 12px;
+  }
+}

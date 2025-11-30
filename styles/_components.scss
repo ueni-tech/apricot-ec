@@ -67,7 +67,8 @@ table {
   border: 1px solid $fontMainColor;
 }
 
-.tableCaption {
+.tableCaption,
+.table_caption {
   font-size: 0.875rem;
   letter-spacing: 0.08em;
   margin-bottom: 5px;

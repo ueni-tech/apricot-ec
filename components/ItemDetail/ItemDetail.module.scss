@@ -1,7 +1,7 @@
 @use '../../styles/variables' as *;
 @use '../../styles/mixins' as *;
 
-.item_detail {
+:global(.item_detail) {
   display: flex;
   justify-content: space-between;
   gap: 75px;
@@ -35,6 +35,7 @@
 
 .item_detail_left_content {
   max-width: 560px;
+  width: 100%;
 
   @include tablet {
     margin: 0 auto;
@@ -83,6 +84,7 @@
 
 .item_detail_right_content {
   padding-right: 16px;
+  width: 100%;
 
   @include tablet {
     max-width: 960px;
@@ -100,12 +102,6 @@
 
   @include mobile {
     margin-bottom: 5px;
-  }
-}
-
-.item_detail {
-  .badge {
-    margin-right: 12px;
   }
 }
 
@@ -152,6 +148,7 @@
 
 .item_detail_point_icon {
   margin-right: 5px;
+  width: 2.5%;
 
   @include mobile {
     height: clamp(10px, 1.45vw, 14px);
@@ -164,8 +161,12 @@
   align-items: center;
 }
 
-.item_detail_sns_share_icon {
+.item_detail_sns_share {
   margin-right: 18px;
+}
+
+.item_detail_sns_share_icon {
+  width: 50px;
 }
 
 .item_detail_sns_shareList {
@@ -288,7 +289,6 @@
 
 .item_info {
   margin-top: 155px;
-  height: 600px;
 
   @include tablet {
     margin-top: 170px;
@@ -317,20 +317,20 @@
 }
 
 .tab_itemintro {
-  top: -61px;
+  top: -54px;
   left: 20px;
 
   @include mobile {
-    top: -42px;
+    top: -34px;
   }
 }
 
 .tab_itemsize {
-  top: -61px;
+  top: -54px;
   left: 217px;
 
   @include mobile {
-    top: -42px;
+    top: -34px;
     left: clamp(164px, 22.62vw, 217px);
   }
 }
@@ -343,6 +343,13 @@
   padding-bottom: 19px;
   border: 1px solid $fontMainColor;
   border-bottom: none;
+  background: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
 
   @include mobile {
     width: clamp(127px, 18.66vw, 179px);
@@ -388,7 +395,18 @@
 }
 
 .table_item_detail {
-  margin: 0 auto;
+
+  th {
+    width: 105px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  td {
+    width: 360px;
+    padding: 10px 16px;
+    letter-spacing: 0.08em;
+  }
 
   @include mobile {
     margin: 0;
@@ -396,10 +414,30 @@
 }
 
 .table_itemSize {
-  margin: 43px auto 0;
+  margin: 43px 0 0;
+
+  th:first-child {
+    width: 105px;
+  }
+
+  th {
+    width: 90px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  td {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 
   @include mobile {
     margin-left: 0;
     margin-right: 0;
   }
+}
+
+.item_tab_description {
+  width: 100%;
 }

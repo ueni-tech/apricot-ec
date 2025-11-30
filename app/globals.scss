@@ -1,6 +1,7 @@
 @use '../styles/variables' as *;
 @use '../styles/mixins' as *;
 @import url('https://unpkg.com/ress/dist/ress.min.css');
+@import '../styles/components';
 
 :root {
   --mainColor: #{$mainColor};

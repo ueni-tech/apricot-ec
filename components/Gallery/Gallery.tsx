@@ -54,7 +54,6 @@ export default function Gallery({ images, alt = '商品画像' }: GalleryProps) 
         modules={[Thumbs]}
         onSwiper={setThumbsSwiper}
         slidesPerView={thumbsSlidesPerView}
-        spaceBetween={10}
         loop={thumbsShouldLoop}
         watchSlidesProgress={true}
         className={styles.choice_btn}
