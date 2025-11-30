@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import ProductCard from "../ProductCard/ProductCard";
 import styles from "./NewItems.module.scss";
+import { ProductCardProps, Badge } from "@/types/Product";
 
 const products = [
   {
@@ -26,7 +27,7 @@ const products = [
     "badges": [
       { "type": "new", "text": "New" },
       { "type": "arrived", "text": "入荷済み" }
-    ],
+    ] as Badge[],
     "colors": [
       {
         "name": "ホワイト",
@@ -98,7 +99,7 @@ const products = [
     "badges": [
       { "type": "new", "text": "New" },
       { "type": "arrived", "text": "入荷済み" }
-    ],
+    ] as Badge[],
     "colors": [],
     "description": "",
     "details": {},
@@ -122,7 +123,7 @@ const products = [
       { "type": "new", "text": "New" },
       { "type": "discount", "text": "10% OFF" },
       { "type": "scheduled", "text": "6/20入荷" }
-    ],
+    ] as Badge[],
     "colors": [],
     "description": "",
     "details": {},
@@ -146,7 +147,7 @@ const products = [
       { "type": "new", "text": "New" },
       { "type": "discount", "text": "10% OFF" },
       { "type": "scheduled", "text": "6/20入荷" }
-    ],
+    ] as Badge[],
     "colors": [],
     "description": "",
     "details": {},
@@ -169,7 +170,7 @@ const products = [
     "badges": [
       { "type": "new", "text": "New" },
       { "type": "arrived", "text": "入荷済み" }
-    ],
+    ] as Badge[],
     "colors": [],
     "description": "",
     "details": {},
@@ -180,7 +181,7 @@ const products = [
     "isRestock": false,
     "stockStatus": "arrived"
   },
-]
+] as unknown as ProductCardProps['product'][]
 export default function NewItems() {
   return (
     <div className={`contentBlock_content newItems ${styles.newItems}`}>
