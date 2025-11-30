@@ -13,14 +13,7 @@ type CategoryNavProps = {
 }
 
 export default function CategoryNav({ productTypes, categories }: CategoryNavProps) {
-  const [openCategories, setOpenCategories] = useState<Record<number, boolean>>({})
-
-  const toggleCattegory = (index: number) => {
-    setOpenCategories((prev) => ({
-      ...prev,
-      [index]: !prev[index],
-    }))
-  }
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null)
 
   return (
     <nav className={styles.side_menu}>
@@ -44,12 +37,13 @@ export default function CategoryNav({ productTypes, categories }: CategoryNavPro
       <p className={styles.side_menu_title}>カテゴリから探す</p>
       <ul className={styles.side_menu_list}>
         {categories.map((category, index) => (
-          <li key={index} className={`${styles.side_menu_item} ${styles.has_sub}`}>
-            <Link
-              href="#"
-              className={styles.side_menu_link}
-              onClick={() => category.subCategories && toggleCattegory(index)}
-            >
+          <li
+            key={index}
+            className={`${styles.side_menu_item} ${styles.has_sub}`}
+            onMouseEnter={() => category.subCategories && setHoveredIndex(index)}
+            onMouseLeave={() => setHoveredIndex(null)}
+          >
+            <Link href="#" className={styles.side_menu_link}>
               <span>{category.label}</span>
               <Image
                 src="/img/top/chevron-right-solid.png"
@@ -60,7 +54,7 @@ export default function CategoryNav({ productTypes, categories }: CategoryNavPro
               />
             </Link>
             {category.subCategories && (
-              <ul className={`${styles.sub_menu} ${openCategories[index] ? styles.open : ''}`}>
+              <ul className={`${styles.sub_menu} ${hoveredIndex === index ? styles.open : ''}`}>
                 {category.subCategories.map((subItem, subIndex) => (
                   <li key={subIndex} className={styles.sub_menu_item}>
                     <Link href="#" className={styles.sub_menu_link}>

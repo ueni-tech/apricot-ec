@@ -62,7 +62,7 @@ export default function Footer() {
         {footerSections.map((section, index) => (
           <div key={index} className={styles.footer_content}>
             <p
-              className={`${styles.footer_title} ${styles.has_sub}`}
+              className={`${styles.footer_title} ${styles.has_sub} ${openSections[index] ? styles.active : ''}`}
               onClick={() => toggleSection(index)}
             >
               <span>{section.title}</span>

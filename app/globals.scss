@@ -17,15 +17,15 @@
   box-sizing: border-box;
 }
 
+html.open {
+  overflow: hidden;
+}
+
 body {
   color: var(--fontMainColor);
   font-size: 100%;
   font-family: var(--fontJP), var(--fontEN), sans-serif;
   font-weight: 400;
-
-  &.open {
-    overflow: hidden;
-  }
 }
 
 img {

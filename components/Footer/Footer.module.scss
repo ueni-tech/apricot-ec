@@ -15,6 +15,7 @@
 
 .footer_chevron {
   display: none;
+  transition: transform 0.3s ease;
 }
 
 .footer_title {
@@ -75,6 +76,7 @@
 
   .footer_chevron {
     display: inline;
+    width: 15px;
   }
 
   .footer_title {
@@ -84,16 +86,22 @@
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
-  }
 
-  .footer_title.active img {
-    transform: rotate(180deg);
+    &.active {
+      .footer_chevron {
+        transform: rotate(180deg);
+      }
+    }
   }
 
   .footer_list {
     display: none;
     margin-top: 0;
     background-color: var(--mainColor);
+
+    &.active {
+      display: block;
+    }
   }
 
   .footer_content_sns {

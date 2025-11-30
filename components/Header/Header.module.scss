@@ -190,6 +190,12 @@
   color: $section_titleColor;
 }
 
+.humb_menu_list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 .humb_menu_item {
   font-size: clamp(0.625rem, 2.26vw, 0.875rem);
   letter-spacing: 0.097em;
@@ -206,6 +212,27 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
+  width: 100%;
+  background: none;
+  border: none;
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  letter-spacing: inherit;
+  cursor: pointer;
+  text-align: left;
+}
+
+.humb_menu_btn {
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.humb_menu_chevron {
+  width: 7px;
+  height: 13px;
+  transition: transform 0.3s ease;
 }
 
 .active {

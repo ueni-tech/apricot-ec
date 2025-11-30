@@ -61,3 +61,9 @@
   gap: 5px;
   margin-top: 5px;
 }
+
+@include mobile {
+  .item_card_badges_wrapper {
+    display: none;
+  }
+}
