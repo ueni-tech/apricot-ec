@@ -48,11 +48,11 @@ export default function ItemDetail({ product }: ItemDetailProps) {
             </div>
             <h2 className={styles.item_detail_name}>{product.name}</h2>
           </header>
-          <p className={styles.item_detail_price}>
+          <p className={`${styles.item_detail_price} ${product.discountPrice ? styles.item_detail_price_discount : ''}`}>
             {product.discountPrice && (
               <span className={styles.item_detail_price_original}>¥{formattedDiscountPrice}</span>
             )}
-            ¥{formattedPrice}<span>(税込)</span>
+            <span className={styles.item_detail_price_current}>¥{formattedPrice}</span><span className={styles.item_detail_price_tax}>(税込)</span>
           </p>
           <p className={styles.item_detailPoint}><Image className={styles.item_detail_point_icon} src="/img/item/icon_point.png"
             alt="ポイントアイコン" width={20} height={20} />{product.point}ポイント獲得</p>
@@ -89,11 +89,11 @@ export default function ItemDetail({ product }: ItemDetailProps) {
             ))}
             <h2 className={styles.item_detail_name}>{product.name}</h2>
           </header>
-          <p className={styles.item_detail_price}>
+          <p className={`${styles.item_detail_price} ${product.discountPrice ? styles.item_detail_price_discount : ''}`}>
             {product.discountPrice && (
               <span className={styles.item_detail_price_original}>¥{formattedDiscountPrice}</span>
             )}
-            ¥{formattedPrice}<span>(税込)</span>
+            <span className={styles.item_detail_price_current}>¥{formattedPrice}</span><span className={styles.item_detail_price_tax}>(税込)</span>
           </p>
           <p className={styles.item_detailPoint}><Image className={styles.item_detail_point_icon} src="/img/item/icon_point.png"
             alt="ポイントアイコン" width={20} height={20} />{product.point}ポイント獲得</p>
