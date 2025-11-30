@@ -289,6 +289,10 @@
   padding-top: 8px;
   padding-bottom: 7px;
   padding-left: 20px;
+  border-radius: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 
   @include mobile {
     font-size: clamp(0.75rem, 1.67vw, 1rem);
