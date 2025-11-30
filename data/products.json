@@ -48,7 +48,7 @@
         "stock": { "S": true, "M": true, "L": true }
       }
     ],
-    "description": "トレンドのカットジャガード生地を採用した半袖Tシャツ。やや短めの丈感で、ハイウエストのボトムやスカートをバランスよく合わせていただけます。",
+    "description": "トレンドのカットジャガード生地を採用した半袖Tシャツ。やや短めの丈感で、ハイウエストのボトムやスカートをバランスよく合わせていただけます。表面変化たっぷりの素材で、1枚コーディネートに取り入れるだけで新鮮な印象。同生地のスカートとのセットアップでよりこなれ感のある着こなしに。シンプルなデニムなどを合わせても、大人カジュアルなコーディネートをお楽しみいただけます。伸縮性のある生地で、なおかつ肌に当たる面はフラットになっているため、ストレスフリーな着心地。デイリー使いにもお出かけシーンにもおすすめのデザイントップスです。",
     "details": {
       "productNumber": "1234567",
       "origin": "China",
@@ -94,11 +94,45 @@
       { "type": "new", "text": "New" },
       { "type": "arrived", "text": "入荷済み" }
     ],
-    "colors": [],
-    "description": "",
-    "details": {},
+    "colors": [
+      {
+        "name": "ネイビー",
+        "image": "/img/item/itemColor_blue.jpg",
+        "sizes": ["S", "M", "L"],
+        "stock": { "S": true, "M": true, "L": true }
+      },
+      {
+        "name": "ブラック",
+        "image": "/img/item/itemColor_black.jpg",
+        "sizes": ["S", "M", "L"],
+        "stock": { "S": true, "M": true, "L": false }
+      }
+    ],
+    "description": "スパイラルストライプが印象的なナロースカート。スリムなシルエットで脚長効果も抜群です。ウエスト部分はゴム仕様で着用しやすく、動きやすいデザイン。スーツスタイルにもカジュアルコーデにも合わせやすい、シンプルながら存在感のあるアイテムです。",
+    "details": {
+      "productNumber": "134729",
+      "origin": "China",
+      "material": "ポリエステル65％、レーヨン30％、ポリウレタン5％",
+      "sizes": {
+        "S": {
+          "length": 65,
+          "waist": 60,
+          "hem": 38
+        },
+        "M": {
+          "length": 67,
+          "waist": 64,
+          "hem": 40
+        },
+        "L": {
+          "length": 69,
+          "waist": 68,
+          "hem": 42
+        }
+      }
+    },
     "tags": ["ボトムス", "スカート", "入荷済み", "新着"],
-    "point": 0,
+    "point": 34,
     "isNew": true,
     "isPopular": false,
     "isRestock": false,
@@ -118,11 +152,48 @@
       { "type": "discount", "text": "10% OFF" },
       { "type": "scheduled", "text": "6/20入荷" }
     ],
-    "colors": [],
-    "description": "",
-    "details": {},
+    "colors": [
+      {
+        "name": "ホワイト",
+        "image": "/img/item/itemColor_white.jpg",
+        "sizes": ["S", "M", "L"],
+        "stock": { "S": true, "M": true, "L": true }
+      },
+      {
+        "name": "ベージュ",
+        "image": "/img/item/itemColor_white.jpg",
+        "sizes": ["S", "M", "L"],
+        "stock": { "S": true, "M": true, "L": true }
+      }
+    ],
+    "description": "シースルー素材のストライプブラウスに、ぺプラムデザインが加わったエレガントなアイテム。透け感のある素材で上品な印象を与えます。フロントのボタン開けで、VネックにもUネックにも着こなせます。オフィススタイルからカジュアルまで幅広く活躍する、季節を問わない定番ブラウスです。",
+    "details": {
+      "productNumber": "136336",
+      "origin": "China",
+      "material": "ポリエステル100％",
+      "sizes": {
+        "S": {
+          "length": 58,
+          "width": 48,
+          "shoulder": 38,
+          "sleeve": 24
+        },
+        "M": {
+          "length": 60,
+          "width": 50,
+          "shoulder": 39,
+          "sleeve": 25
+        },
+        "L": {
+          "length": 62,
+          "width": 52,
+          "shoulder": 40,
+          "sleeve": 26
+        }
+      }
+    },
     "tags": ["トップス", "シャツ・ブラウス", "新着"],
-    "point": 0,
+    "point": 34,
     "isNew": true,
     "isPopular": false,
     "isRestock": false,
@@ -142,11 +213,45 @@
       { "type": "discount", "text": "10% OFF" },
       { "type": "scheduled", "text": "6/20入荷" }
     ],
-    "colors": [],
-    "description": "",
-    "details": {},
+    "colors": [
+      {
+        "name": "ブラック",
+        "image": "/img/item/itemColor_black.jpg",
+        "sizes": ["S", "M", "L"],
+        "stock": { "S": true, "M": true, "L": true }
+      },
+      {
+        "name": "ネイビー",
+        "image": "/img/item/itemColor_blue.jpg",
+        "sizes": ["S", "M", "L"],
+        "stock": { "S": true, "M": true, "L": true }
+      }
+    ],
+    "description": "クラッシュカットジャガード生地を使用したマーメイドスカート。ウエストはフィットし、裾に向かって広がるシルエットが美しいラインを演出します。同生地のカットソーとのセットアップで、統一感のあるコーディネートが楽しめます。カジュアルから少しフォーマルなシーンまで、幅広いスタイリングに対応できるアイテムです。",
+    "details": {
+      "productNumber": "136322",
+      "origin": "China",
+      "material": "ポリエステル95％、ポリウレタン5％",
+      "sizes": {
+        "S": {
+          "length": 75,
+          "waist": 62,
+          "hem": 45
+        },
+        "M": {
+          "length": 77,
+          "waist": 66,
+          "hem": 47
+        },
+        "L": {
+          "length": 79,
+          "waist": 70,
+          "hem": 49
+        }
+      }
+    },
     "tags": ["ボトムス", "スカート", "新着"],
-    "point": 0,
+    "point": 34,
     "isNew": true,
     "isPopular": false,
     "isRestock": false,
@@ -165,11 +270,54 @@
       { "type": "new", "text": "New" },
       { "type": "arrived", "text": "入荷済み" }
     ],
-    "colors": [],
-    "description": "",
-    "details": {},
+    "colors": [
+      {
+        "name": "ホワイト",
+        "image": "/img/item/itemColor_white.jpg",
+        "sizes": ["S", "M", "L"],
+        "stock": { "S": true, "M": true, "L": true }
+      },
+      {
+        "name": "ブラック",
+        "image": "/img/item/itemColor_black.jpg",
+        "sizes": ["S", "M", "L"],
+        "stock": { "S": true, "M": true, "L": true }
+      },
+      {
+        "name": "グレー",
+        "image": "/img/item/itemColor_white.jpg",
+        "sizes": ["S", "M", "L"],
+        "stock": { "S": true, "M": true, "L": false }
+      }
+    ],
+    "description": "USAコットン100％の天竺素材を使用したTシャツ。フロッキー加工のロゴがアクセントになっています。肌触りの良いコットン素材で、毎日着用したくなる快適さ。シンプルなデザインなので、どんなボトムスにも合わせやすく、ベーシックアイテムとして長く愛用できます。",
+    "details": {
+      "productNumber": "136161",
+      "origin": "China",
+      "material": "綿100％",
+      "sizes": {
+        "S": {
+          "length": 62,
+          "width": 50,
+          "shoulder": 42,
+          "sleeve": 19
+        },
+        "M": {
+          "length": 64,
+          "width": 52,
+          "shoulder": 43,
+          "sleeve": 20
+        },
+        "L": {
+          "length": 66,
+          "width": 54,
+          "shoulder": 44,
+          "sleeve": 21
+        }
+      }
+    },
     "tags": ["トップス", "Tシャツ", "入荷済み", "新着"],
-    "point": 0,
+    "point": 24,
     "isNew": true,
     "isPopular": false,
     "isRestock": false,
@@ -188,11 +336,54 @@
       { "type": "popular", "text": "人気" },
       { "type": "arrived", "text": "入荷済み" }
     ],
-    "colors": [],
-    "description": "",
-    "details": {},
+    "colors": [
+      {
+        "name": "ブラック",
+        "image": "/img/item/itemColor_black.jpg",
+        "sizes": ["S", "M", "L"],
+        "stock": { "S": true, "M": true, "L": true }
+      },
+      {
+        "name": "ベージュ",
+        "image": "/img/item/itemColor_white.jpg",
+        "sizes": ["S", "M", "L"],
+        "stock": { "S": true, "M": true, "L": true }
+      },
+      {
+        "name": "グレー",
+        "image": "/img/item/itemColor_white.jpg",
+        "sizes": ["S", "M", "L"],
+        "stock": { "S": false, "M": true, "L": true }
+      }
+    ],
+    "description": "ジョーゼット素材のジョガーパンツに、フロントタックがアクセントとして加わったデザイン。リラックスしたシルエットながら、きちんと感も演出できます。ウエストはゴム仕様で着用しやすく、動きやすい設計。カジュアルから少しフォーマルなシーンまで、幅広いスタイリングに対応できるアイテムです。",
+    "details": {
+      "productNumber": "136341",
+      "origin": "China",
+      "material": "ポリエステル65％、レーヨン30％、ポリウレタン5％",
+      "sizes": {
+        "S": {
+          "length": 95,
+          "waist": 64,
+          "hip": 88,
+          "inseam": 28
+        },
+        "M": {
+          "length": 97,
+          "waist": 68,
+          "hip": 92,
+          "inseam": 29
+        },
+        "L": {
+          "length": 99,
+          "waist": 72,
+          "hip": 96,
+          "inseam": 30
+        }
+      }
+    },
     "tags": ["ボトムス", "パンツ・デニム", "入荷済み", "人気"],
-    "point": 0,
+    "point": 29,
     "isNew": false,
     "isPopular": true,
     "isRestock": false,
@@ -212,11 +403,54 @@
       { "type": "discount", "text": "10% OFF" },
       { "type": "scheduled", "text": "6/20入荷" }
     ],
-    "colors": [],
-    "description": "",
-    "details": {},
+    "colors": [
+      {
+        "name": "ベージュ",
+        "image": "/img/item/itemColor_white.jpg",
+        "sizes": ["S", "M", "L"],
+        "stock": { "S": true, "M": true, "L": true }
+      },
+      {
+        "name": "グレー",
+        "image": "/img/item/itemColor_white.jpg",
+        "sizes": ["S", "M", "L"],
+        "stock": { "S": true, "M": true, "L": true }
+      },
+      {
+        "name": "ブラック",
+        "image": "/img/item/itemColor_black.jpg",
+        "sizes": ["S", "M", "L"],
+        "stock": { "S": false, "M": true, "L": true }
+      }
+    ],
+    "description": "楊柳素材のガウンタイプカーディガンに、ボリュームスリーブが特徴的なデザイン。ゆったりとしたシルエットで、どんなボトムスにも合わせやすく、レイヤードスタイルにも最適です。オープンで着るのはもちろん、ベルトを巻いてワンピース風に着こなすこともできます。季節を問わず活躍する、上品でエレガントなアイテムです。",
+    "details": {
+      "productNumber": "133972",
+      "origin": "China",
+      "material": "アクリル50％、ポリエステル30％、ナイロン20％",
+      "sizes": {
+        "S": {
+          "length": 95,
+          "width": 58,
+          "shoulder": 42,
+          "sleeve": 62
+        },
+        "M": {
+          "length": 97,
+          "width": 60,
+          "shoulder": 43,
+          "sleeve": 63
+        },
+        "L": {
+          "length": 99,
+          "width": 62,
+          "shoulder": 44,
+          "sleeve": 64
+        }
+      }
+    },
     "tags": ["アウター", "カーディガン", "新着"],
-    "point": 0,
+    "point": 29,
     "isNew": true,
     "isPopular": false,
     "isRestock": false,
@@ -235,11 +469,48 @@
       { "type": "popular", "text": "人気" },
       { "type": "arrived", "text": "入荷済み" }
     ],
-    "colors": [],
-    "description": "",
-    "details": {},
+    "colors": [
+      {
+        "name": "ホワイト",
+        "image": "/img/item/itemColor_white.jpg",
+        "sizes": ["S", "M", "L"],
+        "stock": { "S": true, "M": true, "L": true }
+      },
+      {
+        "name": "ベージュ",
+        "image": "/img/item/itemColor_white.jpg",
+        "sizes": ["S", "M", "L"],
+        "stock": { "S": true, "M": true, "L": true }
+      }
+    ],
+    "description": "ワッシャー加工のドット柄が可愛らしいブラウスに、ボリュームスリーブがポイントのデザイン。フロントのボタン開けで、VネックにもUネックにも着こなせます。シンプルなボトムスと合わせるだけで、上品で洗練された印象に。オフィススタイルからカジュアルまで、幅広いシーンで活躍するアイテムです。",
+    "details": {
+      "productNumber": "136306",
+      "origin": "China",
+      "material": "ポリエステル100％",
+      "sizes": {
+        "S": {
+          "length": 60,
+          "width": 50,
+          "shoulder": 38,
+          "sleeve": 26
+        },
+        "M": {
+          "length": 62,
+          "width": 52,
+          "shoulder": 39,
+          "sleeve": 27
+        },
+        "L": {
+          "length": 64,
+          "width": 54,
+          "shoulder": 40,
+          "sleeve": 28
+        }
+      }
+    },
     "tags": ["トップス", "シャツ・ブラウス", "入荷済み", "人気"],
-    "point": 0,
+    "point": 29,
     "isNew": false,
     "isPopular": true,
     "isRestock": false,
@@ -259,11 +530,51 @@
       { "type": "discount", "text": "15% OFF" },
       { "type": "arrived", "text": "入荷済み" }
     ],
-    "colors": [],
-    "description": "",
-    "details": {},
+    "colors": [
+      {
+        "name": "ベージュ",
+        "image": "/img/item/itemColor_white.jpg",
+        "sizes": ["S", "M", "L"],
+        "stock": { "S": true, "M": true, "L": true }
+      },
+      {
+        "name": "ピンク",
+        "image": "/img/item/itemColor_orange.jpg",
+        "sizes": ["S", "M", "L"],
+        "stock": { "S": true, "M": true, "L": true }
+      },
+      {
+        "name": "ブルー",
+        "image": "/img/item/itemColor_blue.jpg",
+        "sizes": ["S", "M", "L"],
+        "stock": { "S": false, "M": true, "L": true }
+      }
+    ],
+    "description": "コットンブレンド素材のボリュームスカート。ふんわりとしたシルエットが女性らしさを演出します。ウエスト部分はゴム仕様で着用しやすく、動きやすいデザイン。カラーバリエーションも豊富で、シンプルなトップスと合わせるだけで、おしゃれなコーディネートが完成します。",
+    "details": {
+      "productNumber": "136210",
+      "origin": "China",
+      "material": "綿65％、ポリエステル30％、ポリウレタン5％",
+      "sizes": {
+        "S": {
+          "length": 68,
+          "waist": 62,
+          "hem": 52
+        },
+        "M": {
+          "length": 70,
+          "waist": 66,
+          "hem": 54
+        },
+        "L": {
+          "length": 72,
+          "waist": 70,
+          "hem": 56
+        }
+      }
+    },
     "tags": ["ボトムス", "スカート", "入荷済み", "人気"],
-    "point": 0,
+    "point": 34,
     "isNew": false,
     "isPopular": true,
     "isRestock": false,
@@ -282,11 +593,54 @@
       { "type": "popular", "text": "人気" },
       { "type": "arrived", "text": "入荷済み" }
     ],
-    "colors": [],
-    "description": "",
-    "details": {},
+    "colors": [
+      {
+        "name": "ベージュ",
+        "image": "/img/item/itemColor_white.jpg",
+        "sizes": ["S", "M", "L"],
+        "stock": { "S": true, "M": true, "L": true }
+      },
+      {
+        "name": "ホワイト",
+        "image": "/img/item/itemColor_white.jpg",
+        "sizes": ["S", "M", "L"],
+        "stock": { "S": true, "M": true, "L": true }
+      },
+      {
+        "name": "ブラック",
+        "image": "/img/item/itemColor_black.jpg",
+        "sizes": ["S", "M", "L"],
+        "stock": { "S": false, "M": true, "L": true }
+      }
+    ],
+    "description": "リネンライク素材のワンピースに、パフスリーブとウエストシャーリングがポイントのデザイン。ウエスト部分のシャーリングで、きれいなシルエットを演出します。1枚で完成するコーディネートなので、忙しい朝にも大活躍。ベルトを巻いてスタイルアップも可能です。",
+    "details": {
+      "productNumber": "136114",
+      "origin": "China",
+      "material": "ポリエステル65％、レーヨン30％、ポリウレタン5％",
+      "sizes": {
+        "S": {
+          "length": 98,
+          "width": 52,
+          "shoulder": 38,
+          "sleeve": 24
+        },
+        "M": {
+          "length": 100,
+          "width": 54,
+          "shoulder": 39,
+          "sleeve": 25
+        },
+        "L": {
+          "length": 102,
+          "width": 56,
+          "shoulder": 40,
+          "sleeve": 26
+        }
+      }
+    },
     "tags": ["ワンピース", "入荷済み", "人気"],
-    "point": 0,
+    "point": 49,
     "isNew": false,
     "isPopular": true,
     "isRestock": false,
@@ -305,11 +659,48 @@
       { "type": "re", "text": "Re:" },
       { "type": "arrived", "text": "入荷済み" }
     ],
-    "colors": [],
-    "description": "",
-    "details": {},
+    "colors": [
+      {
+        "name": "ブラック",
+        "image": "/img/item/itemColor_black.jpg",
+        "sizes": ["S", "M", "L"],
+        "stock": { "S": true, "M": true, "L": true }
+      },
+      {
+        "name": "グレー",
+        "image": "/img/item/itemColor_white.jpg",
+        "sizes": ["S", "M", "L"],
+        "stock": { "S": true, "M": true, "L": true }
+      }
+    ],
+    "description": "ジョーゼット素材のジョガーパンツに、ピンタックとスリットがアクセントとして加わったデザイン。リラックスしたシルエットながら、きちんと感も演出できます。ウエストはゴム仕様で着用しやすく、動きやすい設計。カジュアルから少しフォーマルなシーンまで、幅広いスタイリングに対応できるアイテムです。",
+    "details": {
+      "productNumber": "136342",
+      "origin": "China",
+      "material": "ポリエステル65％、レーヨン30％、ポリウレタン5％",
+      "sizes": {
+        "S": {
+          "length": 93,
+          "waist": 64,
+          "hip": 88,
+          "inseam": 28
+        },
+        "M": {
+          "length": 95,
+          "waist": 68,
+          "hip": 92,
+          "inseam": 29
+        },
+        "L": {
+          "length": 97,
+          "waist": 72,
+          "hip": 96,
+          "inseam": 30
+        }
+      }
+    },
     "tags": ["ボトムス", "パンツ・デニム", "入荷済み", "再入荷"],
-    "point": 0,
+    "point": 29,
     "isNew": false,
     "isPopular": false,
     "isRestock": true,
@@ -329,11 +720,48 @@
       { "type": "discount", "text": "10% OFF" },
       { "type": "scheduled", "text": "6/20入荷" }
     ],
-    "colors": [],
-    "description": "",
-    "details": {},
+    "colors": [
+      {
+        "name": "ベージュ",
+        "image": "/img/item/itemColor_white.jpg",
+        "sizes": ["S", "M", "L"],
+        "stock": { "S": true, "M": true, "L": true }
+      },
+      {
+        "name": "グレー",
+        "image": "/img/item/itemColor_white.jpg",
+        "sizes": ["S", "M", "L"],
+        "stock": { "S": true, "M": true, "L": true }
+      }
+    ],
+    "description": "リサイクルツイル素材のVネックノースリーブチュニック。環境に配慮した素材を使用しながら、上質な見た目と着心地を実現しています。Vネックが首元をすっきりと見せ、ノースリーブで動きやすく、レイヤードスタイルにも最適です。",
+    "details": {
+      "productNumber": "135635",
+      "origin": "China",
+      "material": "リサイクルポリエステル100％",
+      "sizes": {
+        "S": {
+          "length": 72,
+          "width": 54,
+          "shoulder": 0,
+          "sleeve": 0
+        },
+        "M": {
+          "length": 74,
+          "width": 56,
+          "shoulder": 0,
+          "sleeve": 0
+        },
+        "L": {
+          "length": 76,
+          "width": 58,
+          "shoulder": 0,
+          "sleeve": 0
+        }
+      }
+    },
     "tags": ["トップス", "再入荷"],
-    "point": 0,
+    "point": 39,
     "isNew": false,
     "isPopular": false,
     "isRestock": true,
@@ -353,11 +781,48 @@
       { "type": "discount", "text": "15% OFF" },
       { "type": "scheduled", "text": "6/25入荷" }
     ],
-    "colors": [],
-    "description": "",
-    "details": {},
+    "colors": [
+      {
+        "name": "ホワイト",
+        "image": "/img/item/itemColor_white.jpg",
+        "sizes": ["S", "M", "L"],
+        "stock": { "S": true, "M": true, "L": true }
+      },
+      {
+        "name": "ブラック",
+        "image": "/img/item/itemColor_black.jpg",
+        "sizes": ["S", "M", "L"],
+        "stock": { "S": true, "M": true, "L": true }
+      }
+    ],
+    "description": "シースルー素材のトップスに、シャーリングショルダーがポイントのデザイン。透け感のある素材で上品な印象を与えます。シンプルなボトムスと合わせるだけで、おしゃれなコーディネートが完成します。",
+    "details": {
+      "productNumber": "136339",
+      "origin": "China",
+      "material": "ポリエステル100％",
+      "sizes": {
+        "S": {
+          "length": 58,
+          "width": 50,
+          "shoulder": 38,
+          "sleeve": 0
+        },
+        "M": {
+          "length": 60,
+          "width": 52,
+          "shoulder": 39,
+          "sleeve": 0
+        },
+        "L": {
+          "length": 62,
+          "width": 54,
+          "shoulder": 40,
+          "sleeve": 0
+        }
+      }
+    },
     "tags": ["トップス", "再入荷"],
-    "point": 0,
+    "point": 29,
     "isNew": false,
     "isPopular": false,
     "isRestock": true,
@@ -376,11 +841,48 @@
       { "type": "re", "text": "Re:" },
       { "type": "arrived", "text": "入荷済み" }
     ],
-    "colors": [],
-    "description": "",
-    "details": {},
+    "colors": [
+      {
+        "name": "ブラック",
+        "image": "/img/item/itemColor_black.jpg",
+        "sizes": ["S", "M", "L"],
+        "stock": { "S": true, "M": true, "L": true }
+      },
+      {
+        "name": "グレー",
+        "image": "/img/item/itemColor_white.jpg",
+        "sizes": ["S", "M", "L"],
+        "stock": { "S": true, "M": true, "L": true }
+      }
+    ],
+    "description": "ハニカムテレコ素材のワンピースに、前後2WAYレイヤードライクデザインが特徴的。1枚で完成するコーディネートなので、忙しい朝にも大活躍。ベルトを巻いてスタイルアップも可能です。",
+    "details": {
+      "productNumber": "136328",
+      "origin": "China",
+      "material": "ポリエステル95％、ポリウレタン5％",
+      "sizes": {
+        "S": {
+          "length": 96,
+          "width": 52,
+          "shoulder": 38,
+          "sleeve": 22
+        },
+        "M": {
+          "length": 98,
+          "width": 54,
+          "shoulder": 39,
+          "sleeve": 23
+        },
+        "L": {
+          "length": 100,
+          "width": 56,
+          "shoulder": 40,
+          "sleeve": 24
+        }
+      }
+    },
     "tags": ["ワンピース", "入荷済み", "再入荷"],
-    "point": 0,
+    "point": 44,
     "isNew": false,
     "isPopular": false,
     "isRestock": true,
@@ -400,11 +902,48 @@
       { "type": "discount", "text": "10% OFF" },
       { "type": "scheduled", "text": "6/20入荷" }
     ],
-    "colors": [],
-    "description": "",
-    "details": {},
+    "colors": [
+      {
+        "name": "ホワイト",
+        "image": "/img/item/itemColor_white.jpg",
+        "sizes": ["S", "M", "L"],
+        "stock": { "S": true, "M": true, "L": true }
+      },
+      {
+        "name": "ブラック",
+        "image": "/img/item/itemColor_black.jpg",
+        "sizes": ["S", "M", "L"],
+        "stock": { "S": true, "M": true, "L": true }
+      }
+    ],
+    "description": "シンプルで着回しやすいカットソー。ベーシックなデザインなので、どんなボトムスにも合わせやすく、毎日のコーディネートに欠かせないアイテムです。肌触りの良い素材で、快適な着心地を実現しています。",
+    "details": {
+      "productNumber": "items01",
+      "origin": "China",
+      "material": "ポリエステル95％、ポリウレタン5％",
+      "sizes": {
+        "S": {
+          "length": 58,
+          "width": 48,
+          "shoulder": 38,
+          "sleeve": 20
+        },
+        "M": {
+          "length": 60,
+          "width": 50,
+          "shoulder": 39,
+          "sleeve": 21
+        },
+        "L": {
+          "length": 62,
+          "width": 52,
+          "shoulder": 40,
+          "sleeve": 22
+        }
+      }
+    },
     "tags": ["トップス", "カットソー", "新着"],
-    "point": 0,
+    "point": 19,
     "isNew": true,
     "isPopular": false,
     "isRestock": false,
@@ -420,11 +959,48 @@
     "images": ["/img/search/items02.jpg"],
     "thumbnail": "/img/search/items02.jpg",
     "badges": [{ "type": "arrived", "text": "入荷済み" }],
-    "colors": [],
-    "description": "",
-    "details": {},
+    "colors": [
+      {
+        "name": "グレー",
+        "image": "/img/item/itemColor_white.jpg",
+        "sizes": ["S", "M", "L"],
+        "stock": { "S": true, "M": true, "L": true }
+      },
+      {
+        "name": "ネイビー",
+        "image": "/img/item/itemColor_blue.jpg",
+        "sizes": ["S", "M", "L"],
+        "stock": { "S": true, "M": true, "L": false }
+      }
+    ],
+    "description": "シンプルで着回しやすいカットソー。ベーシックなデザインなので、どんなボトムスにも合わせやすく、毎日のコーディネートに欠かせないアイテムです。肌触りの良い素材で、快適な着心地を実現しています。",
+    "details": {
+      "productNumber": "items02",
+      "origin": "China",
+      "material": "ポリエステル95％、ポリウレタン5％",
+      "sizes": {
+        "S": {
+          "length": 58,
+          "width": 48,
+          "shoulder": 38,
+          "sleeve": 20
+        },
+        "M": {
+          "length": 60,
+          "width": 50,
+          "shoulder": 39,
+          "sleeve": 21
+        },
+        "L": {
+          "length": 62,
+          "width": 52,
+          "shoulder": 40,
+          "sleeve": 22
+        }
+      }
+    },
     "tags": ["トップス", "カットソー", "入荷済み"],
-    "point": 0,
+    "point": 19,
     "isNew": false,
     "isPopular": false,
     "isRestock": false,
@@ -443,11 +1019,54 @@
       { "type": "popular", "text": "人気" },
       { "type": "arrived", "text": "入荷済み" }
     ],
-    "colors": [],
-    "description": "",
-    "details": {},
+    "colors": [
+      {
+        "name": "ホワイト",
+        "image": "/img/item/itemColor_white.jpg",
+        "sizes": ["S", "M", "L"],
+        "stock": { "S": true, "M": true, "L": true }
+      },
+      {
+        "name": "ブラック",
+        "image": "/img/item/itemColor_black.jpg",
+        "sizes": ["S", "M", "L"],
+        "stock": { "S": true, "M": true, "L": true }
+      },
+      {
+        "name": "ベージュ",
+        "image": "/img/item/itemColor_white.jpg",
+        "sizes": ["S", "M", "L"],
+        "stock": { "S": false, "M": true, "L": true }
+      }
+    ],
+    "description": "シンプルで着回しやすいカットソー。ベーシックなデザインなので、どんなボトムスにも合わせやすく、毎日のコーディネートに欠かせないアイテムです。肌触りの良い素材で、快適な着心地を実現しています。",
+    "details": {
+      "productNumber": "items03",
+      "origin": "China",
+      "material": "ポリエステル95％、ポリウレタン5％",
+      "sizes": {
+        "S": {
+          "length": 58,
+          "width": 48,
+          "shoulder": 38,
+          "sleeve": 20
+        },
+        "M": {
+          "length": 60,
+          "width": 50,
+          "shoulder": 39,
+          "sleeve": 21
+        },
+        "L": {
+          "length": 62,
+          "width": 52,
+          "shoulder": 40,
+          "sleeve": 22
+        }
+      }
+    },
     "tags": ["トップス", "カットソー", "入荷済み", "人気"],
-    "point": 0,
+    "point": 29,
     "isNew": false,
     "isPopular": true,
     "isRestock": false,
@@ -467,11 +1086,48 @@
       { "type": "discount", "text": "10% OFF" },
       { "type": "scheduled", "text": "6/20入荷" }
     ],
-    "colors": [],
-    "description": "",
-    "details": {},
+    "colors": [
+      {
+        "name": "ホワイト",
+        "image": "/img/item/itemColor_white.jpg",
+        "sizes": ["S", "M", "L"],
+        "stock": { "S": true, "M": true, "L": true }
+      },
+      {
+        "name": "ブラック",
+        "image": "/img/item/itemColor_black.jpg",
+        "sizes": ["S", "M", "L"],
+        "stock": { "S": true, "M": true, "L": true }
+      }
+    ],
+    "description": "シンプルで着回しやすいカットソー。ベーシックなデザインなので、どんなボトムスにも合わせやすく、毎日のコーディネートに欠かせないアイテムです。肌触りの良い素材で、快適な着心地を実現しています。",
+    "details": {
+      "productNumber": "items04",
+      "origin": "China",
+      "material": "ポリエステル95％、ポリウレタン5％",
+      "sizes": {
+        "S": {
+          "length": 58,
+          "width": 48,
+          "shoulder": 38,
+          "sleeve": 20
+        },
+        "M": {
+          "length": 60,
+          "width": 50,
+          "shoulder": 39,
+          "sleeve": 21
+        },
+        "L": {
+          "length": 62,
+          "width": 52,
+          "shoulder": 40,
+          "sleeve": 22
+        }
+      }
+    },
     "tags": ["トップス", "カットソー", "新着"],
-    "point": 0,
+    "point": 19,
     "isNew": true,
     "isPopular": false,
     "isRestock": false,
@@ -491,11 +1147,48 @@
       { "type": "discount", "text": "10% OFF" },
       { "type": "scheduled", "text": "6/20入荷" }
     ],
-    "colors": [],
-    "description": "",
-    "details": {},
+    "colors": [
+      {
+        "name": "ホワイト",
+        "image": "/img/item/itemColor_white.jpg",
+        "sizes": ["S", "M", "L"],
+        "stock": { "S": true, "M": true, "L": true }
+      },
+      {
+        "name": "ブラック",
+        "image": "/img/item/itemColor_black.jpg",
+        "sizes": ["S", "M", "L"],
+        "stock": { "S": true, "M": true, "L": true }
+      }
+    ],
+    "description": "シンプルで着回しやすいカットソー。ベーシックなデザインなので、どんなボトムスにも合わせやすく、毎日のコーディネートに欠かせないアイテムです。肌触りの良い素材で、快適な着心地を実現しています。",
+    "details": {
+      "productNumber": "items05",
+      "origin": "China",
+      "material": "ポリエステル95％、ポリウレタン5％",
+      "sizes": {
+        "S": {
+          "length": 58,
+          "width": 48,
+          "shoulder": 38,
+          "sleeve": 20
+        },
+        "M": {
+          "length": 60,
+          "width": 50,
+          "shoulder": 39,
+          "sleeve": 21
+        },
+        "L": {
+          "length": 62,
+          "width": 52,
+          "shoulder": 40,
+          "sleeve": 22
+        }
+      }
+    },
     "tags": ["トップス", "カットソー", "新着"],
-    "point": 0,
+    "point": 19,
     "isNew": true,
     "isPopular": false,
     "isRestock": false,
@@ -511,11 +1204,48 @@
     "images": ["/img/search/items06.jpg"],
     "thumbnail": "/img/search/items06.jpg",
     "badges": [{ "type": "arrived", "text": "入荷済み" }],
-    "colors": [],
-    "description": "",
-    "details": {},
+    "colors": [
+      {
+        "name": "グレー",
+        "image": "/img/item/itemColor_white.jpg",
+        "sizes": ["S", "M", "L"],
+        "stock": { "S": true, "M": true, "L": true }
+      },
+      {
+        "name": "ネイビー",
+        "image": "/img/item/itemColor_blue.jpg",
+        "sizes": ["S", "M", "L"],
+        "stock": { "S": true, "M": true, "L": false }
+      }
+    ],
+    "description": "シンプルで着回しやすいカットソー。ベーシックなデザインなので、どんなボトムスにも合わせやすく、毎日のコーディネートに欠かせないアイテムです。肌触りの良い素材で、快適な着心地を実現しています。",
+    "details": {
+      "productNumber": "items06",
+      "origin": "China",
+      "material": "ポリエステル95％、ポリウレタン5％",
+      "sizes": {
+        "S": {
+          "length": 58,
+          "width": 48,
+          "shoulder": 38,
+          "sleeve": 20
+        },
+        "M": {
+          "length": 60,
+          "width": 50,
+          "shoulder": 39,
+          "sleeve": 21
+        },
+        "L": {
+          "length": 62,
+          "width": 52,
+          "shoulder": 40,
+          "sleeve": 22
+        }
+      }
+    },
     "tags": ["トップス", "カットソー", "入荷済み"],
-    "point": 0,
+    "point": 19,
     "isNew": false,
     "isPopular": false,
     "isRestock": false,
@@ -534,11 +1264,54 @@
       { "type": "popular", "text": "人気" },
       { "type": "arrived", "text": "入荷済み" }
     ],
-    "colors": [],
-    "description": "",
-    "details": {},
+    "colors": [
+      {
+        "name": "ホワイト",
+        "image": "/img/item/itemColor_white.jpg",
+        "sizes": ["S", "M", "L"],
+        "stock": { "S": true, "M": true, "L": true }
+      },
+      {
+        "name": "ブラック",
+        "image": "/img/item/itemColor_black.jpg",
+        "sizes": ["S", "M", "L"],
+        "stock": { "S": true, "M": true, "L": true }
+      },
+      {
+        "name": "ベージュ",
+        "image": "/img/item/itemColor_white.jpg",
+        "sizes": ["S", "M", "L"],
+        "stock": { "S": false, "M": true, "L": true }
+      }
+    ],
+    "description": "シンプルで着回しやすいカットソー。ベーシックなデザインなので、どんなボトムスにも合わせやすく、毎日のコーディネートに欠かせないアイテムです。肌触りの良い素材で、快適な着心地を実現しています。",
+    "details": {
+      "productNumber": "items07",
+      "origin": "China",
+      "material": "ポリエステル95％、ポリウレタン5％",
+      "sizes": {
+        "S": {
+          "length": 58,
+          "width": 48,
+          "shoulder": 38,
+          "sleeve": 20
+        },
+        "M": {
+          "length": 60,
+          "width": 50,
+          "shoulder": 39,
+          "sleeve": 21
+        },
+        "L": {
+          "length": 62,
+          "width": 52,
+          "shoulder": 40,
+          "sleeve": 22
+        }
+      }
+    },
     "tags": ["トップス", "カットソー", "入荷済み", "人気"],
-    "point": 0,
+    "point": 29,
     "isNew": false,
     "isPopular": true,
     "isRestock": false,
@@ -558,11 +1331,48 @@
       { "type": "discount", "text": "10% OFF" },
       { "type": "scheduled", "text": "6/20入荷" }
     ],
-    "colors": [],
-    "description": "",
-    "details": {},
+    "colors": [
+      {
+        "name": "ホワイト",
+        "image": "/img/item/itemColor_white.jpg",
+        "sizes": ["S", "M", "L"],
+        "stock": { "S": true, "M": true, "L": true }
+      },
+      {
+        "name": "ブラック",
+        "image": "/img/item/itemColor_black.jpg",
+        "sizes": ["S", "M", "L"],
+        "stock": { "S": true, "M": true, "L": true }
+      }
+    ],
+    "description": "シンプルで着回しやすいカットソー。ベーシックなデザインなので、どんなボトムスにも合わせやすく、毎日のコーディネートに欠かせないアイテムです。肌触りの良い素材で、快適な着心地を実現しています。",
+    "details": {
+      "productNumber": "items08",
+      "origin": "China",
+      "material": "ポリエステル95％、ポリウレタン5％",
+      "sizes": {
+        "S": {
+          "length": 58,
+          "width": 48,
+          "shoulder": 38,
+          "sleeve": 20
+        },
+        "M": {
+          "length": 60,
+          "width": 50,
+          "shoulder": 39,
+          "sleeve": 21
+        },
+        "L": {
+          "length": 62,
+          "width": 52,
+          "shoulder": 40,
+          "sleeve": 22
+        }
+      }
+    },
     "tags": ["トップス", "カットソー", "新着"],
-    "point": 0,
+    "point": 19,
     "isNew": true,
     "isPopular": false,
     "isRestock": false,
@@ -582,11 +1392,48 @@
       { "type": "discount", "text": "10% OFF" },
       { "type": "scheduled", "text": "6/20入荷" }
     ],
-    "colors": [],
-    "description": "",
-    "details": {},
+    "colors": [
+      {
+        "name": "ホワイト",
+        "image": "/img/item/itemColor_white.jpg",
+        "sizes": ["S", "M", "L"],
+        "stock": { "S": true, "M": true, "L": true }
+      },
+      {
+        "name": "ブラック",
+        "image": "/img/item/itemColor_black.jpg",
+        "sizes": ["S", "M", "L"],
+        "stock": { "S": true, "M": true, "L": true }
+      }
+    ],
+    "description": "シンプルで着回しやすいカットソー。ベーシックなデザインなので、どんなボトムスにも合わせやすく、毎日のコーディネートに欠かせないアイテムです。肌触りの良い素材で、快適な着心地を実現しています。",
+    "details": {
+      "productNumber": "items09",
+      "origin": "China",
+      "material": "ポリエステル95％、ポリウレタン5％",
+      "sizes": {
+        "S": {
+          "length": 58,
+          "width": 48,
+          "shoulder": 38,
+          "sleeve": 20
+        },
+        "M": {
+          "length": 60,
+          "width": 50,
+          "shoulder": 39,
+          "sleeve": 21
+        },
+        "L": {
+          "length": 62,
+          "width": 52,
+          "shoulder": 40,
+          "sleeve": 22
+        }
+      }
+    },
     "tags": ["トップス", "カットソー", "新着"],
-    "point": 0,
+    "point": 19,
     "isNew": true,
     "isPopular": false,
     "isRestock": false,
@@ -602,11 +1449,48 @@
     "images": ["/img/search/items10.jpg"],
     "thumbnail": "/img/search/items10.jpg",
     "badges": [{ "type": "arrived", "text": "入荷済み" }],
-    "colors": [],
-    "description": "",
-    "details": {},
+    "colors": [
+      {
+        "name": "グレー",
+        "image": "/img/item/itemColor_white.jpg",
+        "sizes": ["S", "M", "L"],
+        "stock": { "S": true, "M": true, "L": true }
+      },
+      {
+        "name": "ネイビー",
+        "image": "/img/item/itemColor_blue.jpg",
+        "sizes": ["S", "M", "L"],
+        "stock": { "S": true, "M": true, "L": false }
+      }
+    ],
+    "description": "シンプルで着回しやすいカットソー。ベーシックなデザインなので、どんなボトムスにも合わせやすく、毎日のコーディネートに欠かせないアイテムです。肌触りの良い素材で、快適な着心地を実現しています。",
+    "details": {
+      "productNumber": "items10",
+      "origin": "China",
+      "material": "ポリエステル95％、ポリウレタン5％",
+      "sizes": {
+        "S": {
+          "length": 58,
+          "width": 48,
+          "shoulder": 38,
+          "sleeve": 20
+        },
+        "M": {
+          "length": 60,
+          "width": 50,
+          "shoulder": 39,
+          "sleeve": 21
+        },
+        "L": {
+          "length": 62,
+          "width": 52,
+          "shoulder": 40,
+          "sleeve": 22
+        }
+      }
+    },
     "tags": ["トップス", "カットソー", "入荷済み"],
-    "point": 0,
+    "point": 19,
     "isNew": false,
     "isPopular": false,
     "isRestock": false,
@@ -625,11 +1509,54 @@
       { "type": "popular", "text": "人気" },
       { "type": "arrived", "text": "入荷済み" }
     ],
-    "colors": [],
-    "description": "",
-    "details": {},
+    "colors": [
+      {
+        "name": "ホワイト",
+        "image": "/img/item/itemColor_white.jpg",
+        "sizes": ["S", "M", "L"],
+        "stock": { "S": true, "M": true, "L": true }
+      },
+      {
+        "name": "ブラック",
+        "image": "/img/item/itemColor_black.jpg",
+        "sizes": ["S", "M", "L"],
+        "stock": { "S": true, "M": true, "L": true }
+      },
+      {
+        "name": "ベージュ",
+        "image": "/img/item/itemColor_white.jpg",
+        "sizes": ["S", "M", "L"],
+        "stock": { "S": false, "M": true, "L": true }
+      }
+    ],
+    "description": "シンプルで着回しやすいカットソー。ベーシックなデザインなので、どんなボトムスにも合わせやすく、毎日のコーディネートに欠かせないアイテムです。肌触りの良い素材で、快適な着心地を実現しています。",
+    "details": {
+      "productNumber": "items11",
+      "origin": "China",
+      "material": "ポリエステル95％、ポリウレタン5％",
+      "sizes": {
+        "S": {
+          "length": 58,
+          "width": 48,
+          "shoulder": 38,
+          "sleeve": 20
+        },
+        "M": {
+          "length": 60,
+          "width": 50,
+          "shoulder": 39,
+          "sleeve": 21
+        },
+        "L": {
+          "length": 62,
+          "width": 52,
+          "shoulder": 40,
+          "sleeve": 22
+        }
+      }
+    },
     "tags": ["トップス", "カットソー", "入荷済み", "人気"],
-    "point": 0,
+    "point": 29,
     "isNew": false,
     "isPopular": true,
     "isRestock": false,
@@ -649,11 +1576,48 @@
       { "type": "discount", "text": "10% OFF" },
       { "type": "scheduled", "text": "6/20入荷" }
     ],
-    "colors": [],
-    "description": "",
-    "details": {},
+    "colors": [
+      {
+        "name": "ホワイト",
+        "image": "/img/item/itemColor_white.jpg",
+        "sizes": ["S", "M", "L"],
+        "stock": { "S": true, "M": true, "L": true }
+      },
+      {
+        "name": "ブラック",
+        "image": "/img/item/itemColor_black.jpg",
+        "sizes": ["S", "M", "L"],
+        "stock": { "S": true, "M": true, "L": true }
+      }
+    ],
+    "description": "シンプルで着回しやすいカットソー。ベーシックなデザインなので、どんなボトムスにも合わせやすく、毎日のコーディネートに欠かせないアイテムです。肌触りの良い素材で、快適な着心地を実現しています。",
+    "details": {
+      "productNumber": "items12",
+      "origin": "China",
+      "material": "ポリエステル95％、ポリウレタン5％",
+      "sizes": {
+        "S": {
+          "length": 58,
+          "width": 48,
+          "shoulder": 38,
+          "sleeve": 20
+        },
+        "M": {
+          "length": 60,
+          "width": 50,
+          "shoulder": 39,
+          "sleeve": 21
+        },
+        "L": {
+          "length": 62,
+          "width": 52,
+          "shoulder": 40,
+          "sleeve": 22
+        }
+      }
+    },
     "tags": ["トップス", "カットソー", "新着"],
-    "point": 0,
+    "point": 19,
     "isNew": true,
     "isPopular": false,
     "isRestock": false,
@@ -673,11 +1637,48 @@
       { "type": "discount", "text": "10% OFF" },
       { "type": "scheduled", "text": "6/20入荷" }
     ],
-    "colors": [],
-    "description": "",
-    "details": {},
+    "colors": [
+      {
+        "name": "ホワイト",
+        "image": "/img/item/itemColor_white.jpg",
+        "sizes": ["S", "M", "L"],
+        "stock": { "S": true, "M": true, "L": true }
+      },
+      {
+        "name": "ブラック",
+        "image": "/img/item/itemColor_black.jpg",
+        "sizes": ["S", "M", "L"],
+        "stock": { "S": true, "M": true, "L": true }
+      }
+    ],
+    "description": "シンプルで着回しやすいカットソー。ベーシックなデザインなので、どんなボトムスにも合わせやすく、毎日のコーディネートに欠かせないアイテムです。肌触りの良い素材で、快適な着心地を実現しています。",
+    "details": {
+      "productNumber": "items13",
+      "origin": "China",
+      "material": "ポリエステル95％、ポリウレタン5％",
+      "sizes": {
+        "S": {
+          "length": 58,
+          "width": 48,
+          "shoulder": 38,
+          "sleeve": 20
+        },
+        "M": {
+          "length": 60,
+          "width": 50,
+          "shoulder": 39,
+          "sleeve": 21
+        },
+        "L": {
+          "length": 62,
+          "width": 52,
+          "shoulder": 40,
+          "sleeve": 22
+        }
+      }
+    },
     "tags": ["トップス", "カットソー", "新着"],
-    "point": 0,
+    "point": 19,
     "isNew": true,
     "isPopular": false,
     "isRestock": false,
@@ -693,11 +1694,48 @@
     "images": ["/img/search/items14.jpg"],
     "thumbnail": "/img/search/items14.jpg",
     "badges": [{ "type": "arrived", "text": "入荷済み" }],
-    "colors": [],
-    "description": "",
-    "details": {},
+    "colors": [
+      {
+        "name": "グレー",
+        "image": "/img/item/itemColor_white.jpg",
+        "sizes": ["S", "M", "L"],
+        "stock": { "S": true, "M": true, "L": true }
+      },
+      {
+        "name": "ネイビー",
+        "image": "/img/item/itemColor_blue.jpg",
+        "sizes": ["S", "M", "L"],
+        "stock": { "S": true, "M": true, "L": false }
+      }
+    ],
+    "description": "シンプルで着回しやすいカットソー。ベーシックなデザインなので、どんなボトムスにも合わせやすく、毎日のコーディネートに欠かせないアイテムです。肌触りの良い素材で、快適な着心地を実現しています。",
+    "details": {
+      "productNumber": "items14",
+      "origin": "China",
+      "material": "ポリエステル95％、ポリウレタン5％",
+      "sizes": {
+        "S": {
+          "length": 58,
+          "width": 48,
+          "shoulder": 38,
+          "sleeve": 20
+        },
+        "M": {
+          "length": 60,
+          "width": 50,
+          "shoulder": 39,
+          "sleeve": 21
+        },
+        "L": {
+          "length": 62,
+          "width": 52,
+          "shoulder": 40,
+          "sleeve": 22
+        }
+      }
+    },
     "tags": ["トップス", "カットソー", "入荷済み"],
-    "point": 0,
+    "point": 19,
     "isNew": false,
     "isPopular": false,
     "isRestock": false,
@@ -716,11 +1754,54 @@
       { "type": "popular", "text": "人気" },
       { "type": "arrived", "text": "入荷済み" }
     ],
-    "colors": [],
-    "description": "",
-    "details": {},
+    "colors": [
+      {
+        "name": "ホワイト",
+        "image": "/img/item/itemColor_white.jpg",
+        "sizes": ["S", "M", "L"],
+        "stock": { "S": true, "M": true, "L": true }
+      },
+      {
+        "name": "ブラック",
+        "image": "/img/item/itemColor_black.jpg",
+        "sizes": ["S", "M", "L"],
+        "stock": { "S": true, "M": true, "L": true }
+      },
+      {
+        "name": "ベージュ",
+        "image": "/img/item/itemColor_white.jpg",
+        "sizes": ["S", "M", "L"],
+        "stock": { "S": false, "M": true, "L": true }
+      }
+    ],
+    "description": "シンプルで着回しやすいカットソー。ベーシックなデザインなので、どんなボトムスにも合わせやすく、毎日のコーディネートに欠かせないアイテムです。肌触りの良い素材で、快適な着心地を実現しています。",
+    "details": {
+      "productNumber": "items15",
+      "origin": "China",
+      "material": "ポリエステル95％、ポリウレタン5％",
+      "sizes": {
+        "S": {
+          "length": 58,
+          "width": 48,
+          "shoulder": 38,
+          "sleeve": 20
+        },
+        "M": {
+          "length": 60,
+          "width": 50,
+          "shoulder": 39,
+          "sleeve": 21
+        },
+        "L": {
+          "length": 62,
+          "width": 52,
+          "shoulder": 40,
+          "sleeve": 22
+        }
+      }
+    },
     "tags": ["トップス", "カットソー", "入荷済み", "人気"],
-    "point": 0,
+    "point": 29,
     "isNew": false,
     "isPopular": true,
     "isRestock": false,
@@ -740,11 +1821,48 @@
       { "type": "discount", "text": "10% OFF" },
       { "type": "scheduled", "text": "6/20入荷" }
     ],
-    "colors": [],
-    "description": "",
-    "details": {},
+    "colors": [
+      {
+        "name": "ホワイト",
+        "image": "/img/item/itemColor_white.jpg",
+        "sizes": ["S", "M", "L"],
+        "stock": { "S": true, "M": true, "L": true }
+      },
+      {
+        "name": "ブラック",
+        "image": "/img/item/itemColor_black.jpg",
+        "sizes": ["S", "M", "L"],
+        "stock": { "S": true, "M": true, "L": true }
+      }
+    ],
+    "description": "シンプルで着回しやすいカットソー。ベーシックなデザインなので、どんなボトムスにも合わせやすく、毎日のコーディネートに欠かせないアイテムです。肌触りの良い素材で、快適な着心地を実現しています。",
+    "details": {
+      "productNumber": "items16",
+      "origin": "China",
+      "material": "ポリエステル95％、ポリウレタン5％",
+      "sizes": {
+        "S": {
+          "length": 58,
+          "width": 48,
+          "shoulder": 38,
+          "sleeve": 20
+        },
+        "M": {
+          "length": 60,
+          "width": 50,
+          "shoulder": 39,
+          "sleeve": 21
+        },
+        "L": {
+          "length": 62,
+          "width": 52,
+          "shoulder": 40,
+          "sleeve": 22
+        }
+      }
+    },
     "tags": ["トップス", "カットソー", "新着"],
-    "point": 0,
+    "point": 19,
     "isNew": true,
     "isPopular": false,
     "isRestock": false,
@@ -764,11 +1882,48 @@
       { "type": "discount", "text": "10% OFF" },
       { "type": "scheduled", "text": "6/20入荷" }
     ],
-    "colors": [],
-    "description": "",
-    "details": {},
+    "colors": [
+      {
+        "name": "ホワイト",
+        "image": "/img/item/itemColor_white.jpg",
+        "sizes": ["S", "M", "L"],
+        "stock": { "S": true, "M": true, "L": true }
+      },
+      {
+        "name": "ブラック",
+        "image": "/img/item/itemColor_black.jpg",
+        "sizes": ["S", "M", "L"],
+        "stock": { "S": true, "M": true, "L": true }
+      }
+    ],
+    "description": "シンプルで着回しやすいカットソー。ベーシックなデザインなので、どんなボトムスにも合わせやすく、毎日のコーディネートに欠かせないアイテムです。肌触りの良い素材で、快適な着心地を実現しています。",
+    "details": {
+      "productNumber": "items17",
+      "origin": "China",
+      "material": "ポリエステル95％、ポリウレタン5％",
+      "sizes": {
+        "S": {
+          "length": 58,
+          "width": 48,
+          "shoulder": 38,
+          "sleeve": 20
+        },
+        "M": {
+          "length": 60,
+          "width": 50,
+          "shoulder": 39,
+          "sleeve": 21
+        },
+        "L": {
+          "length": 62,
+          "width": 52,
+          "shoulder": 40,
+          "sleeve": 22
+        }
+      }
+    },
     "tags": ["トップス", "カットソー", "新着"],
-    "point": 0,
+    "point": 19,
     "isNew": true,
     "isPopular": false,
     "isRestock": false,
@@ -784,11 +1939,48 @@
     "images": ["/img/search/items18.jpg"],
     "thumbnail": "/img/search/items18.jpg",
     "badges": [{ "type": "arrived", "text": "入荷済み" }],
-    "colors": [],
-    "description": "",
-    "details": {},
+    "colors": [
+      {
+        "name": "グレー",
+        "image": "/img/item/itemColor_white.jpg",
+        "sizes": ["S", "M", "L"],
+        "stock": { "S": true, "M": true, "L": true }
+      },
+      {
+        "name": "ネイビー",
+        "image": "/img/item/itemColor_blue.jpg",
+        "sizes": ["S", "M", "L"],
+        "stock": { "S": true, "M": true, "L": false }
+      }
+    ],
+    "description": "シンプルで着回しやすいカットソー。ベーシックなデザインなので、どんなボトムスにも合わせやすく、毎日のコーディネートに欠かせないアイテムです。肌触りの良い素材で、快適な着心地を実現しています。",
+    "details": {
+      "productNumber": "items18",
+      "origin": "China",
+      "material": "ポリエステル95％、ポリウレタン5％",
+      "sizes": {
+        "S": {
+          "length": 58,
+          "width": 48,
+          "shoulder": 38,
+          "sleeve": 20
+        },
+        "M": {
+          "length": 60,
+          "width": 50,
+          "shoulder": 39,
+          "sleeve": 21
+        },
+        "L": {
+          "length": 62,
+          "width": 52,
+          "shoulder": 40,
+          "sleeve": 22
+        }
+      }
+    },
     "tags": ["トップス", "カットソー", "入荷済み"],
-    "point": 0,
+    "point": 19,
     "isNew": false,
     "isPopular": false,
     "isRestock": false,
@@ -807,11 +1999,54 @@
       { "type": "popular", "text": "人気" },
       { "type": "arrived", "text": "入荷済み" }
     ],
-    "colors": [],
-    "description": "",
-    "details": {},
+    "colors": [
+      {
+        "name": "ホワイト",
+        "image": "/img/item/itemColor_white.jpg",
+        "sizes": ["S", "M", "L"],
+        "stock": { "S": true, "M": true, "L": true }
+      },
+      {
+        "name": "ブラック",
+        "image": "/img/item/itemColor_black.jpg",
+        "sizes": ["S", "M", "L"],
+        "stock": { "S": true, "M": true, "L": true }
+      },
+      {
+        "name": "ベージュ",
+        "image": "/img/item/itemColor_white.jpg",
+        "sizes": ["S", "M", "L"],
+        "stock": { "S": false, "M": true, "L": true }
+      }
+    ],
+    "description": "シンプルで着回しやすいカットソー。ベーシックなデザインなので、どんなボトムスにも合わせやすく、毎日のコーディネートに欠かせないアイテムです。肌触りの良い素材で、快適な着心地を実現しています。",
+    "details": {
+      "productNumber": "items19",
+      "origin": "China",
+      "material": "ポリエステル95％、ポリウレタン5％",
+      "sizes": {
+        "S": {
+          "length": 58,
+          "width": 48,
+          "shoulder": 38,
+          "sleeve": 20
+        },
+        "M": {
+          "length": 60,
+          "width": 50,
+          "shoulder": 39,
+          "sleeve": 21
+        },
+        "L": {
+          "length": 62,
+          "width": 52,
+          "shoulder": 40,
+          "sleeve": 22
+        }
+      }
+    },
     "tags": ["トップス", "カットソー", "入荷済み", "人気"],
-    "point": 0,
+    "point": 29,
     "isNew": false,
     "isPopular": true,
     "isRestock": false,
@@ -831,11 +2066,48 @@
       { "type": "discount", "text": "10% OFF" },
       { "type": "scheduled", "text": "6/20入荷" }
     ],
-    "colors": [],
-    "description": "",
-    "details": {},
+    "colors": [
+      {
+        "name": "ホワイト",
+        "image": "/img/item/itemColor_white.jpg",
+        "sizes": ["S", "M", "L"],
+        "stock": { "S": true, "M": true, "L": true }
+      },
+      {
+        "name": "ブラック",
+        "image": "/img/item/itemColor_black.jpg",
+        "sizes": ["S", "M", "L"],
+        "stock": { "S": true, "M": true, "L": true }
+      }
+    ],
+    "description": "シンプルで着回しやすいカットソー。ベーシックなデザインなので、どんなボトムスにも合わせやすく、毎日のコーディネートに欠かせないアイテムです。肌触りの良い素材で、快適な着心地を実現しています。",
+    "details": {
+      "productNumber": "items20",
+      "origin": "China",
+      "material": "ポリエステル95％、ポリウレタン5％",
+      "sizes": {
+        "S": {
+          "length": 58,
+          "width": 48,
+          "shoulder": 38,
+          "sleeve": 20
+        },
+        "M": {
+          "length": 60,
+          "width": 50,
+          "shoulder": 39,
+          "sleeve": 21
+        },
+        "L": {
+          "length": 62,
+          "width": 52,
+          "shoulder": 40,
+          "sleeve": 22
+        }
+      }
+    },
     "tags": ["トップス", "カットソー", "新着"],
-    "point": 0,
+    "point": 19,
     "isNew": true,
     "isPopular": false,
     "isRestock": false,
