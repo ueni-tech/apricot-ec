@@ -39,20 +39,20 @@ export default function MainVisual({ slides }: MainVisualProps) {
       if (swiperRef.current && !swiperRef.current.destroyed) {
         swiperRef.current.updateSize()
         swiperRef.current.updateSlides()
+        swiperRef.current.updateAutoHeight()
       }
-    }, 100)
+    }, 50)
   }, [])
 
   // ページ遷移後にSwiperを更新
   useEffect(() => {
     loadedImagesRef.current.clear()
-    updateSwiper()
     return () => {
       if (updateTimerRef.current) {
         clearTimeout(updateTimerRef.current)
       }
     }
-  }, [pathname, updateSwiper])
+  }, [pathname])
 
   // Swiperインスタンスが設定された後に更新
   useEffect(() => {
@@ -65,8 +65,16 @@ export default function MainVisual({ slides }: MainVisualProps) {
   const handleImageLoad = useCallback((index: number) => {
     if (!loadedImagesRef.current.has(index)) {
       loadedImagesRef.current.add(index)
-      updateSwiper()
+      // 画像読み込み後は即座に更新
+      if (swiperRef.current && !swiperRef.current.destroyed) {
+        swiperRef.current.updateAutoHeight()
+      }
     }
+  }, [])
+
+  // Swiper初期化後に更新
+  const handleSwiperInit = useCallback(() => {
+    updateSwiper()
   }, [updateSwiper])
 
   return (
@@ -85,6 +93,7 @@ export default function MainVisual({ slides }: MainVisualProps) {
           onSwiper={(swiper) => {
             swiperRef.current = swiper
           }}
+          onInit={handleSwiperInit}
           pagination={{
             clickable: true,
             type: 'bullets',
@@ -95,31 +104,36 @@ export default function MainVisual({ slides }: MainVisualProps) {
           }}
           loop={shouldLoop}
           speed={1300}
+          autoHeight={true}
           className={styles.slider01}
         >
           {slides.map((slide, index) => (
-            <SwiperSlide key={index}>
-              {slide.href ? (
-                <Link href={slide.href}>
+            <SwiperSlide key={index} className={styles.slide}>
+              <div className={styles.image_wrapper}>
+                {slide.href ? (
+                  <Link href={slide.href} className={styles.image_link}>
+                    <Image
+                      src={slide.image}
+                      alt={slide.alt}
+                      width={1150}
+                      height={600}
+                      priority={index === 0}
+                      onLoad={() => handleImageLoad(index)}
+                      className={styles.image}
+                    />
+                  </Link>
+                ) : (
                   <Image
                     src={slide.image}
                     alt={slide.alt}
-                    width={800}
+                    width={1150}
                     height={600}
                     priority={index === 0}
                     onLoad={() => handleImageLoad(index)}
+                    className={styles.image}
                   />
-                </Link>
-              ) : (
-                <Image
-                  src={slide.image}
-                  alt={slide.alt}
-                  width={800}
-                  height={600}
-                  priority={index === 0}
-                  onLoad={() => handleImageLoad(index)}
-                />
-              )}
+                )}
+              </div>
             </SwiperSlide>
           ))}
         </Swiper>
